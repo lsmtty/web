@@ -1,6 +1,6 @@
-define("requireCommon", ['require'], function(requirejs) {
-	requirejs.config({
-		baseUrl: '../../',
+define("requireCommon", ['../../teacherStudio/js/require'], function(requirejs) {
+	require.config({
+		baseUrl: '../../../',
 		paths: {
 			"mock": "http://mockjs.com/dist/mock",
 			"jquery": "lib/jquery/jquery-1.9.1",

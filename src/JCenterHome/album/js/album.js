@@ -1,12 +1,13 @@
 require.config({
+    baseUrl:'../',
     paths: {
-        "configurl": "base/configurl"
+        "configurl": "sh/js/configurl"
     }
 });
 require(['configurl'],function(configpaths){
     require.config(configpaths);
 
-    require(['jquery','tools'],function($,tools){
+    require(['jquery','tools','dialog'],function($,tools,dialog){
         /*
         * 编辑框
         * */
@@ -22,36 +23,7 @@ require(['configurl'],function(configpaths){
         });
         $('body').on('click',function(){
             $('.set-list').hide();
-            /*tools.changeAlbumDialog(
-                function (data){
-                    console.log(data);
-                },
-                {
-                    'name': '哈哈',
-                    'message':'11110',
-                    'permission':0
-                }
-            );*/
-            /*tools.changeClassDialog(function(data){
-                console.log(data);
-            },{
-                name:'123'
-            });*/
-            /*tools.friendGroupDialog(
-                function (data){
-                    console.log(data)
-                },
-                {
-                    list:[
-                        {name:'分组1',id:1},
-                        {name:'分组2',id:2},
-                        {name:'分组3',id:3},
-                        {name:'分组4',id:4},
-                        {name:'分组5',id:5}
-                    ]
-                }
-            )*/
-            tools.photoMoveDialog(
+            dialog.photoMoveDialog(
                 function(data){
                     console.log(data);
                 },

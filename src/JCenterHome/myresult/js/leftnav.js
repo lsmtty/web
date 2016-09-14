@@ -1,3 +1,0 @@
-define("leftnav",['jquery'],function($){
-	
-});

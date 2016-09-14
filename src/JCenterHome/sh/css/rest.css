@@ -1,48 +1,60 @@
 /*all*/
 body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, form, input, textarea, th, td {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 em {
-  font-style: normal; }
+  font-style: normal;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
   vertical-align: top;
-  border: none; }
+  border: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 textarea {
   resize: none;
-  overflow: auto; }
+  overflow: auto;
+}
 
 input, textarea {
-  outline: none; }
+  outline: none;
+}
 
 body, button, input, select, textarea {
   font-family: Microsoft YaHei;
   font-size: 12px;
-  color: #383838; }
+  color: #383838;
+}
 
 .clearFix {
-  zoom: 1; }
+  zoom: 1;
+}
 
 .clearFix:after {
   content: "";
   display: block;
-  clear: both; }
+  clear: both;
+}
 
 .wrap {
   width: 998px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+}
 
 /*# sourceMappingURL=rest.css.map */

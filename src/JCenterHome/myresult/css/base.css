@@ -1,0 +1,52 @@
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.clearFix {
+  zoom: 1; }
+
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+input {
+  font-family: Microsoft YaHei;
+  color: #383838; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+.main {
+  background: #eef1f6; }
+
+.container {
+  width: 998px;
+  position: relative;
+  margin: 0 auto; }
+
+.admit-button {
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px; }
+
+.admit-button {
+  background: #1da1f3;
+  color: #ffffff;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  border: 1px solid #1da1f3; }
+
+/*# sourceMappingURL=base.css.map */

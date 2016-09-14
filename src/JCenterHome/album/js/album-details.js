@@ -1,4 +1,5 @@
 require.config({
+    baseUrl:'../',
     paths: {
         "configurl": "base/configurl"
     }
@@ -6,7 +7,7 @@ require.config({
 require(['configurl'],function(configpaths) {
 
     require.config(configpaths);
-    require(['jquery'], function ($) {
+    require(['jquery','tools','dialog'],function($,tools,dialog) {
         $('body').on('click', '.set-name', function () {
             if ($(this).next().is(':hidden')) {
                 $(this).next().show();

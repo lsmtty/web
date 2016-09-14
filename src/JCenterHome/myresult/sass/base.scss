@@ -1,32 +1,48 @@
-@charset "utf-8"
-$white:#ffffff
-$lightgray:#eef1f6;
-$lighttext:#828282;
-$darktext:#383838;
-$lightblue:#1da1f3;
-$divider:#e1e1e1;
-$smalltext:14px;
-$largetext:16px;
-
-.main{
+@charset "utf-8";
+@import "reset.scss";
+$white: #ffffff;
+$lightgray: #eef1f6;
+$lighttext: #828282;
+$darktext: #383838;
+$lightblue: #1da1f3;
+$divider: #e1e1e1;
+$smalltext: 14px;
+$largetext: 16px;
+@mixin set-radius() {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+};
+.main {
     background: $lightgray;
 }
-
-.container{
+.container {
     width: 998px;
     position: relative;
     margin: 0 auto;
 }
-
 %btn {
+    cursor: pointer;
+    padding: 0;
     text-align: center;
     display: inline-block;
     box-sizing: border-box;
-    border-radius: 2px;
+    @include set-radius();
 }
-
+%ipt {
+    @include set-radius();
+    border: 1px solid $lightblue;
+}
 %textEllipsis {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.admit-button {
+    @extend %btn;
+    background: $lightblue;
+    color: $white;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    border: 1px solid $lightblue;
 }

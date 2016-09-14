@@ -68,6 +68,12 @@
 .delete-album-icon {
     background-position: -48px -289px;
 }
+.text-icon {
+    background-position: -106px -17px;
+}
+.wirte-icon {
+    background-position: -110px -57px;
+}
 //公共
 //三角
 .sanjiao {
@@ -79,6 +85,10 @@
     position: absolute;
     top: 8px;
     right: 5px;
+}
+.sanjiao-top {
+    border-bottom: 5px solid transparent;
+    border-top: none;
 }
 //编辑框
 .set-box {

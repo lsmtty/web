@@ -1,0 +1,40 @@
+#essay {
+  border: 1px solid #d7e1ef;
+  border-radius: 4px;
+  padding: 0 19px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#essay {
+  background: #fff;
+}
+#essay .essay-list {
+  float: left;
+  padding-bottom: 74px;
+  position: relative;
+  width: 703px;
+}
+#essay .essay-list-set {
+  background: #e7ebf4;
+  /* display: none; */
+}
+#essay .top-set {
+  float: left;
+  line-height: 40px;
+  margin: 0 20px 0 5px;
+  color: #3498d8;
+  cursor: pointer;
+}
+#essay #all_onoff {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin: 14px 4px 0 6px;
+}
+#essay #all-set-no {
+  float: right;
+}
+
+/*# sourceMappingURL=essay.css.map */

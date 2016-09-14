@@ -1,9 +1,11 @@
 require.config({
+    baseUrl:'../',
     paths: {
         "configurl": "base/configurl"
     }
 });
 require(['configurl'],function(configpaths){
+    /*添加上传插件*/
     configpaths.paths.upload = "base/component/upload/image-js/uploadnew";
     configpaths.paths.webuploader = "base/component/upload/js/webuploader";
     require.config(configpaths);

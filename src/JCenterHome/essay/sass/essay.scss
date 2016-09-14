@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "../../sh/sass/base/_base";
+#essay {
+    @extend %pad-19;
+    background: $whiteText;
+    .essay-list {
+        float: left;
+        padding-bottom: 74px;
+        position: relative;
+        width: 703px;
+    }
+    .essay-list-set {
+        background: #e7ebf4;
+        /* display: none; */
+    }
+    .top-set {
+         float: left;
+         line-height: 40px;
+         margin: 0 20px 0 5px;
+         color: #3498d8;
+         cursor: pointer;
+     }
+    #all_onoff {
+        float: left;
+        width: 14px;
+        height: 14px;
+        margin: 14px 4px 0 6px;
+    }
+    #all-set-no {
+        float: right;
+    }
+}
+

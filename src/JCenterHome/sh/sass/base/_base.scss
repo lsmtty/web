@@ -28,13 +28,14 @@ $big-text:16px;
     border-radius: 2px;
     margin: 0 5px;
 }
-/*会话提示框*/
+//会话提示盒子
 %dialog-box {
     position: fixed;
     top: 50%;
     left: 50%;
     z-index: 99;
 }
+//确认取消两种按钮
 @mixin btn($width:0,$height:0,$boolean:true){
     width: $width;
     height: $height;
@@ -50,7 +51,7 @@ $big-text:16px;
         border:1px solid $borderColor;
     }
 }
-/*模块盒子*/
+//模块盒子
 @mixin boxSize($width:0,$height:0){
     width: $width;
     height: $height;
