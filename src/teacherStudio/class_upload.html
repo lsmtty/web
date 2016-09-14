@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>名师课堂--上传</title>
+	<link rel="stylesheet" href="css/class_upload.css" />
+	<link rel="stylesheet" href="../base/css/base.css" />
+	<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+	<link href="./css/teachresource_upload.css" rel="stylesheet">
+	<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../lib/jquery/jquery.form.min.js"></script>
+	<script src="js/teacherStudioViewHelper.js"></script>
+	<script src="../base/js/tools.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/teacherStudioHelper.js"></script>
+</head>
+
+<body>
+	<div id="banner">
+	</div>
+	<div id="content" class="wrap">
+		<div id="contentNav"></div>
+		<div id="breadcrumb-nav">
+			<a href="workspace_index.html">首页 </a><span>></span>
+			<a href="class_list.html">名师课堂 </a><span>></span>
+			<span id="current">上传资料</span>
+		</div>
+		<div id="upload-box">
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 视频名称
+				</div>
+				<input id="title-input" maxlength="30" class="message" type="text" placeholder="请输入视频名称">
+				<div class="number-length">
+					(<span id="nuw-num">0</span>/30)
+				</div>
+			</div>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 年级
+				</div>
+				<ul class="kind-list clearFix" id="class_period">
+				</ul>
+			</div>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 学科
+				</div>
+				<ul class="kind-list clearFix" id="class_subject">
+				</ul>
+			</div>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 上传视频
+				</div>
+				<div class="message file-message">
+					<label for="file">
+							<span class="file-val">
+								请选择要上传的视频
+							</span>
+							<form enctype="multipart/form-data" method="post" action="../ts/teacherClass/upload" id="form" name="form">
+                            <input name="file" id="file" type="file" accept=".avi,.mp4,.mov,.wmv,.dat,.asf,.rm,.rmvb,.ram,.mpg,.mpeg,.3gp,.m4v,.dvix,.dv,.mkv,.flv.,vob,.qt,.divx,.cpk,.fli,.flc,.mod">
+                            <img src ="./images/progressbar.gif" class = "progress-bar hidden" id = "progressbar"></img>
+                            <input type="text" name="title" id="inputName" style="display: none;" />
+                            <input type="text" name="fileName" id="inputfileName" style="display: none;" />
+                            <input type="text" name="subjectId" id="inputsubjectId" style="display: none;" />
+                            <input type="text" name="gradeId" id="inputgradeId" style="display: none;" />
+                            <input type="text" name="studioId" id="inputstudioId" style="display: none;" />
+                            </form>
+                        </label>
+				</div>
+				<span class="file-type">
+					    上传视频大小限制为
+                        <span id="file-type-size">
+                            100M
+                        </span>
+				</span>
+			</div>
+			<p class="btns">
+				<a class="bottom-btn btn" >确定</a>
+				<a class="bottom-btn btn-active">取消</a>
+			</p>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+	<script src="js/class_upload.js" type="text/javascript"></script>
+</body>
+
+</html>

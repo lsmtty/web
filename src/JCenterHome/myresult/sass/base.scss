@@ -1,0 +1,32 @@
+@charset "utf-8"
+$white:#ffffff
+$lightgray:#eef1f6;
+$lighttext:#828282;
+$darktext:#383838;
+$lightblue:#1da1f3;
+$divider:#e1e1e1;
+$smalltext:14px;
+$largetext:16px;
+
+.main{
+    background: $lightgray;
+}
+
+.container{
+    width: 998px;
+    position: relative;
+    margin: 0 auto;
+}
+
+%btn {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+%textEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

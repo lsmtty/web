@@ -1,0 +1,135 @@
+li {
+	list-style: none;
+}
+
+.theme-small-title {
+	height: inherit;
+	display: inline-block;
+	padding: 0px 0px;
+}
+
+.theme-small-title span {
+	border-right: 1px solid #EEEEEE;
+	vertical-align: middle;
+	font-weight: bold;
+	font: 14px "微软雅黑";
+	display: inline-block;
+	margin: 0px 0px 0px 11px;
+	padding-right: 11px;
+}
+
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main-content {
+	position: relative;
+	background: #F7F7F7;
+	width: 100%;
+	margin: 0 auto;
+}
+#contentNav {
+	margin-bottom: 12px;
+}
+
+.breadLine {
+	padding-left: 18px;
+}
+
+.breadLine span a {
+	cursor: pointer;
+	color: #828282;
+}
+
+.breadLine span {
+	display: inline-block;
+	margin-top: 9px;
+	font: 12px "微软雅黑";
+	height: 30px;
+}
+
+.theme-list {
+	margin: 0px 0px 0px 22px;
+	height: inherit;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.theme-list:hover {
+	cursor: pointer;
+}
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.blue-title-item {
+	border-bottom: 2px solid #3598d9;
+}
+
+.content-list {
+	background: white;
+	padding: 0px 18px 20px 18px;
+}
+#workspace-member-content {
+	margin-top: -2px;
+}
+
+.block-title-bar {
+	height: 28px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#workspace-member-content .block-title-bar {
+	padding-top: 16px;
+	margin: 0px;
+	width: 964px;
+}
+
+#workspace-member-content .theme-list {
+	margin-left: 0px;
+}
+
+.theme-small-title:active {
+	border-bottom: 2px solid #3598d9;
+	color: #3598d9;
+}
+
+.theme-list li:last-child span {
+	border-right: none;
+}
+
+.content-page{
+	height: 190px;
+	background: #FFFFFF;
+}
+.page-navigator{
+	text-align: center;
+	
+}
+.nav-input{
+	margin-top: 79px;
+	cursor: pointer;
+	margin-left: 20px;
+	width: 32px;
+	height: 32px;
+	outline: none;
+	background: white;
+	text-align: center;
+	border: 1px solid #EEEEEE;
+}
+.blue-nav{
+	color: #FFFFFF;
+	background: #3598D9;
+}
+.page-navigator input:first-child{	
+	width: 64px;
+}
+
+.page-navigator input:last-child{
+	width: 64px;
+}
+

@@ -1,0 +1,300 @@
+/*  shihao  2016/7/5 */
+@charset "utf-8";    
+body {
+	background: #fff;
+}
+.banner .go-work-list{
+	/*display: none;*/
+}
+.banner .go-my-work{
+	display: block;
+}
+/* 用户头像 */
+.user-pic {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin:12px 10px 0 12px; 
+}
+.user-pic img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 动态模块 */
+.dyn {
+	padding-bottom: 10px;
+	overflow: hidden;
+	min-height: 240px;
+}
+.dyn-list {
+	width: 1020px;
+}
+.dyn-list .li {
+	float: left;
+	width: 239px;
+	height: 107px;
+	margin: 12px 12px 0 0;
+	border: 1px solid #eee; 
+	color: #828282;
+	font-size: 14px;
+}
+
+.dyn-msg {
+	float: left;
+	margin-top: 9px;
+	width: 144px;
+	line-height: 22px;
+	color: #828282;
+}
+.dyn-msg .time {
+	font-size: 12px;
+}
+ .dyn-msg .user-name {
+	color: #383838;
+} 
+.artcile {
+	float: left;
+	padding-left: 12px;
+	width: 95%;
+	line-height: 28px;
+}
+.artcile a{
+	color: #2c87ce;
+}
+/* 动态 end */
+/* 工作室推荐 */
+.recommend {
+	overflow: hidden;
+}
+.rec-content {
+	width: 1015px;
+	min-height: 263px;
+}
+.recommend .a-studio {
+	float: left;
+	margin: 12px 12px 12px 0;
+	width: 492px;
+	height: 238px;
+	border: 1px solid #eee;
+}
+.recommend .header {
+	position: relative;
+	height: 84px;
+	background: #edf4f9;
+	border-bottom: 1px solid #eee;
+}
+.recommend .msg {
+	float: left;
+	margin-top: 12px;
+	line-height: 30px;
+}
+.recommend .stuido-name {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 240px;
+}
+.recommend .kind {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.recommend .btns {
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
+.recommend .btns a{
+	margin-right: 10px;
+}
+.recommend .resource {
+	padding-top: 10px; 
+}
+.a-resource {
+	float: left;
+	width: 225px;
+	margin-left: 15px;
+	font-size: 14px;
+}
+.res-title {
+	line-height: 30px;
+	text-indent: 2px;
+	font-weight: bold;
+}
+.res-li {
+	line-height: 26px;
+	position: relative;
+	padding-left: 12px;
+	font-size: 14px;
+}
+.res-li .icon-dot {
+	position: absolute;
+	width: 15px;
+	top: 3px;
+	left: -5px;
+}
+/* 工作室推荐 end */
+/* 名师工作室 */
+.search-box {
+	float: right;
+	margin-top: 4px;
+	border: 1px solid #eee;
+}
+.search-text {
+	float: left;
+	box-sizing: border-box;
+	border:none;
+	border-right: 1px solid #eee;
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	color: #828282;
+	width: 190px;
+}
+.search-btn {
+	float: left;
+	width: 58px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 0;
+}
+.subject {
+	border-bottom: 1px dashed #eee;
+	padding-top: 6px;
+}
+.kind {
+	line-height: 24px;
+	font-size: 14px;
+	margin: 6px 0;
+}
+.kind-title {
+	float: left;
+	width: 50px;
+}
+.kind-list{
+	float: left;
+    width: 950px;
+}
+.kind-li {
+	float: left;
+	padding: 0 11px;
+	margin-right: 12px;
+	cursor: pointer;
+	margin-bottom: 12px;
+}
+.kind-li:hover {
+	color: #3999e3
+}
+.active:hover{
+	color: #fff
+}
+.active {
+	background-color: #3999e3; 
+	color: #fff;
+}
+.sort-way {
+	line-height: 36px;
+}
+.sort-way .title {
+	float: left;
+}
+.way-list {
+	float: left;
+	overflow: hidden;
+}
+.way-li {
+	float: left;
+	height: 14px;
+	line-height: 14px;
+	border-left: 1px solid #eee;
+	margin-left: -1px;
+	padding: 0 10px;
+	margin-top: 11px;
+	cursor: pointer;
+}
+.search-result {
+	float: right;
+	margin-right: 5px;
+}
+.studios-box {
+	overflow: hidden;
+	min-height: 284px;
+}
+
+.studio-list {
+	width: 1015px;
+	min-height: 284px;
+}
+
+.studio-li {
+	float: left;
+	width: 326px;
+	height: 130px;
+	margin: 0 11px 12px 0;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	font-size: 14px;
+}
+.msg-top {
+	height: 84px;
+	overflow: hidden;
+	background: #fcfcfc;
+	border-bottom: 1px solid #eee;
+}
+.studio-msg {
+	float: left;
+	width: 170px;
+	line-height: 30px;
+	margin-top: 11px;
+}
+.studio-name {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 170px;
+	font-size: 16px;
+}
+.msg-top .btns {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+/*.msg-top .btns p{
+	margin-top: 10px;
+}*/
+.record {
+	overflow: hidden;
+	height: 44px;
+}
+.record-kind {
+	float: left;
+	width: 33.3%;
+	height: 20px;
+	border-left: 1px solid #eee;
+	line-height: 20px;
+	margin-top: 12px;
+	margin-left: -1px;
+	text-align: center;
+}
+/* 名师工作室 end*/
+
+#page {
+	height:100px;
+}
+
+.worklist-container {
+	position: absolute;
+    bottom: 12px;
+    right: 2px;
+}
+
+.banner-worklist {
+    width: 113px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+	padding:5px;
+}

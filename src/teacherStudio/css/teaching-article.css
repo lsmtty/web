@@ -1,0 +1,84 @@
+#article-title-area{
+	position: relative;
+	height: 94px;
+	background: #EEEEEE;
+}
+
+#article-title-area input{
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 90px;
+	width: 60px;
+	color: #000000;
+	cursor: pointer;
+}
+#article-title-content{
+	display: inline-block;
+	width: 700px;
+	margin: 24px 70px 10px 150px;
+}
+#article-title-content>span{
+	width: 700px;
+	text-align: center;
+	display: block;
+	font: 20px "微软雅黑";
+	color: #383838;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+#article-info{
+	width: 500px;
+	margin: 0px auto;
+	text-align: center;
+	font: 14px/14px "微软雅黑";
+}
+#publish-time-title{
+	margin-left: 40px;
+}
+#publish-time{
+	color: #828282;
+}
+#author{
+	color: #828282;
+}
+#article-content-area{
+	padding: 46px 26px 42px 26px;
+	background: #FFFFFF;
+	border-bottom: 1px dashed #EEEEEE;
+}
+
+#article-nav-area{
+	background: #FFFFFF;
+	padding: 42px 26px 10px 26px;
+}
+
+#article-nav-area div{
+	margin-left: 32px;
+	font: 14px "微软雅黑";
+}
+
+
+
+.page-title{
+	color: #383838;
+	font-weight: bold;
+}
+
+.page-name:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.gray-font{
+	color: #828282 !important;
+}
+
+#next-page{
+	margin: 18px 0px 50px 0px;
+}
+
+.small-blue-font{
+	color: #2C87CE;
+	font: 12px "微软雅黑";
+}
+

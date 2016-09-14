@@ -1,0 +1,174 @@
+/* shihao 2016/7/6 */
+@charset "utf-8";
+.nav-list {
+	float: left;
+	padding-left: 10px;
+}
+.nav-li {
+	float: left;
+	line-height: 30px;
+}
+.nav-li .gray-text:hover {
+	text-decoration: underline;
+}
+.content-body {
+	box-sizing: border-box;
+	padding-bottom: 40px;
+}
+.content-body .section {
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	background: #fff;
+}
+#article {
+	float: left;
+	width: 730px;
+}
+#article .header {
+	height: 77px;
+	position: relative;
+	background: #eee;
+	padding: 17px 0 0 18px;
+}
+#article .header .title {
+	line-height: 36px;
+	font-size: 20px;
+	max-width: 600px;
+}
+#article .file-msg li {
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: normal;
+	margin-right: 33px;
+}
+#article .down-btn {
+	position: absolute;
+	top: 24px;
+	right: 16px;
+	font-size: 12px;
+	font-weight: normal;
+}
+#article .down-btn:active {
+	background-position: -60px -25px;
+}
+#article-body {
+	min-height: 400px;
+	padding: 20px;
+	border-bottom: 1px solid #eee;
+}
+#author {
+	width: 270px;
+	float: right;
+	padding: 0 12px 20px 12px;
+	border-left: none;
+}
+.author-header {
+	line-height: 34px;
+	height: 34px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.author-header span {
+	display: inline-block;
+	border-bottom: 2px solid #3498d8;
+	padding: 0 5px;
+}
+.author-header .add-friend {
+	position: absolute;
+	width: 68px;
+	height: 28px;
+	top: 8px;
+	right: 0;
+	line-height: 28px;
+	font-weight: normal;
+}
+#author .user-pic {
+	float: left;
+	width: 82px;
+	height: 82px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+#author .user-pic img {
+	width: 100%;
+	height: 100%;
+}
+.author-msg {
+	float: left;
+	width: 160px;
+	line-height: 30px;
+	margin-top: 10px;
+	font-size: 12px;
+	text-indent: 12px;
+}
+.author-msg  .user-name {
+	font-size: 16px;
+}
+.other-msg {
+	overflow: hidden;
+	padding: 15px 0; 
+}
+.other-msg .amsg {
+	float: left;
+	width: 33.3%;
+	border-left: 1px solid #eee;
+	margin-left: -1px;
+	line-height: 22px;
+	height: 44px;
+	text-align: center;
+}
+.other-msg .number {
+	font-size: 20px;
+	font-weight: bold;
+	color: #2e86ce;
+}
+.content-body .recommend {
+	width: 270px;
+	padding: 0 12px;
+	float: right;
+	border-left: none;
+	border-top: none;
+}
+.recommend-header {
+	line-height: 44px;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+}
+.recommend-list {
+	padding: 10px 0;
+}
+.recommend-li {
+	line-height: 38px;
+}
+
+.recommend-li .icon-word-small,.recommend-li .icon-pic-small,.recommend-li .icon-rar-small,.recommend-li .icon-zip-small,
+.recommend-li .icon-pdf-small,.recommend-li .icon-ppt-small{
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+.previewFrame {
+	width:100%;
+	height:400px;
+	padding:0px;
+	margin:0px;
+}
+
+.nopreview {
+	padding-top:120px;	
+}
+
+.nopreview-text {
+	font-size:14px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.nopreview-img {
+	width:120px;
+	height:auto;
+	text-align:center;
+	margin:0 auto;
+	display: block;
+}

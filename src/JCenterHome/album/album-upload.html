@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>照片上传</title>
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/album-upload.css">
+
+    <link rel="stylesheet" href="../../base/component/upload/css/image.css">
+    <!--<script src="../lib/jquery/jquery-1.9.1.js"></script>
+    <script src="../base/component/upload/js/webuploader.js"></script>
+    <script src="../base/component/upload/image-js/upload.js"></script>-->
+
+</head>
+<body>
+<div class="wrap">
+    <div id="upload-box">
+        <h2 class="box-header">
+            相册
+            <a href="javascript:;" class="clild-title">>上传照片</a>
+        </h2>
+        <div class="upload-box">
+            <div class="clearFix">
+				<span class="up-title">
+					相册名称：
+				</span>
+                <div class="album-class">
+                    <span class="sanjiao"></span>
+                    <div id="al-classname" value="">
+                        带你飞介绍的
+                    </div>
+                    <ul id="al-classbox">
+                        <li class="add-album-photo" value="">
+                            <a href="javascript:;" class="al-classnames">
+                                带你飞介绍的带你介绍的带你介绍的带你介绍的带你
+                            </a>
+                        </li>
+                        <li class="add-album-photo" value="">
+                            <a href="javascript:;" class="al-classnames">
+                                1带你飞介绍的带你介绍的带你介绍的带你飞介绍的
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearFix">
+                <span class="up-title">
+					选择照片：
+				</span>
+                <div id="wrapper">
+                    <div id="container">
+                        <!--头部，相册选择和格式选择-->
+                        <div id="uploader">
+                            <div class="queueList">
+                                <div id="dndArea" class="placeholder">
+                                    <div id="filePicker"></div>
+                                    <p>单次最多可选50张（支持格式：jpg、png、gif）</p>
+                                </div>
+                            </div>
+                            <div class="statusBar" style="display:none;">
+                                <div class="progress">
+                                    <span class="text">0%</span>
+                                    <span class="percentage"></span>
+                                </div><div class="info"></div>
+                                <div class="btns">
+                                    <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script src="./js/album-upload.js"></script>-->
+<script src="../../lib/requires/requires.js" data-main="js/album-upload"></script>
+</body>
+</html>

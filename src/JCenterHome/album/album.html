@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>相册首页</title>
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/album.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="album-box">
+            <h2 class="box-header text-mid">
+                <ul>
+                    <li>
+                        <a class="title" href="javascript:;">
+                            相册
+                        </a>
+                    </li>
+                </ul>
+                <ul class="title-right" style="display: block;">
+                    <li id="upload-photo" class="tr-list">
+                        <span class="upload-photo-icon icon-24"></span>
+                        上传照片
+                    </li>
+                    <li id="add-album" class="tr-list">
+                        <span class="add-album-icon icon-24"></span>
+                        创建相册
+                    </li>
+                </ul>
+            </h2>
+            <div id="my-album">
+                <ul class="albums clearFix">
+                    <li class="p-album" aid="57">
+                        <a href="javascript:;" class="aimg-box">
+                            <img src="">
+                        </a>
+                        <div class="album-bottom clearFix">
+						<span class="p-album-name" title="带你飞介绍的">
+							带你飞介绍的
+						</span>
+                            <span class="p-album-num">61</span>
+                        </div>
+                        <div class="set-box" style="-display: none;">
+                            <span class="set-name" key="1">
+                                编辑
+                                <span class="sanjiao"></span>
+                            </span>
+                            <ul class="set-list">
+                                <li>
+                                    <a class="change-album change-album-btn-outer" href="javascript:;">
+                                        修改相册
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="remove-album remove-album-btn-outer" href="javascript:;">
+                                        删除相册
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../lib/requires/requires.js" data-main="js/album"></script>
+</body>
+</html>

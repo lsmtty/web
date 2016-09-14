@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title></title>
+	<link rel="stylesheet" href="css/notice_details.css" />
+	<link rel="stylesheet" href="../base/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/main_content.css" />
+	<link rel="stylesheet" type="text/css" href="css/teaching-article.css" />
+	<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+	<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="../base/js/tools.js"></script>
+	<script src="js/teacherStudioViewHelper.js"></script>
+	<script src="js/teacherStudioHelper.js"></script>
+	<script src="js/config.js"></script>
+</head>
+
+<body>
+	<div id="banner"></div>
+	<div id="contentNav"></div>
+	<div class="main-content">
+		<div class="content">
+			<div class="breadLine">
+				<span><a href="workspace_index.html">首页&gt;  </a></span>
+				<span><a href="notice_list.html">通知公告 &gt; </a></span>
+				<span>正文</span>
+			</div>
+			<div id="article-title-area">
+				<div id="article-title-content">
+					<span id="article-title"></span>
+					<div id="article-info">
+						<span id="author-title">作者 : </span><span id="author"></span>
+						<span id="publish-time-title">发表时间 : </span><span id="publish-time"></span>
+					</div>
+				</div>
+				<input id="deleteButton" class="btn-active" type="button" value="删除" onclick="deleteItem(this)" style="display: none;">
+			</div>
+			<div id="article-content-area">
+			</div>
+			<div id="article-nav-area">
+				<div id="last-page">
+					<span class="page-title">上一篇 : </span><span class="page-name"><a></a></span>
+				</div>
+				<div id="next-page">
+					<span class="page-title">下一篇 : </span><span class="page-name"><a></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"> </div>
+	<script src="js/notice_detail.js"></script>
+
+</body>
+
+</html>

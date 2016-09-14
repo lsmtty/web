@@ -1,0 +1,28 @@
+@charset "utf-8"
+@import "base.scss"
+
+.left-nav-ul{
+    width: 196px;
+    float: left;
+    .left-nav-li{
+        background: $white;
+        height: 54px;
+        border: 1px solid $divider;
+        padding: 18px 0px;
+        span{
+            display: inline-block;
+            @extend %textEllipsis
+            width: 160px;
+            padding-left: 26px;
+            font:16px/16px "微软雅黑" ;
+            color: $lighttext;
+        }
+    }
+    .checked{
+        background: $lightgray;
+        span{
+            border-left: 5px solid $lightblue;
+            padding-left: 21px;
+        }
+    }
+}

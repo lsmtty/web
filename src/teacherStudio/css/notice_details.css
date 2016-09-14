@@ -1,0 +1,138 @@
+#breadcrumb-nav {
+    height: 30px;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#breadcrumb-nav a {
+    line-height: 30px;
+    color: #828282;
+    font-size: 12px;
+}
+
+#breadcrumb-nav span {
+    line-height: 30px;
+    color: #828282;
+    font-size: 12px;
+}
+
+#breadcrumb-nav-right {
+    float: right;
+}
+
+#breadcrumb-nav-img {
+    float: right;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ff0000;
+    margin-right: 10px;
+}
+
+#breadcrumb-nav #current {
+    line-height: 30px;
+    color: #383838;
+    font-size: 12px;
+}
+
+#title {
+    height: 92px;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#title .title-noborder {
+    padding-top: 18px;
+    font-size: 20px;
+    color: #383838;
+    font-weight: bold;
+}
+
+#title .add-time {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #383838;
+}
+
+#title .text-time {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #828282;
+}
+
+#title-left {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#title-right {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#title input {
+    line-height: 92px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 60px;
+    height: 25px;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#title input:hover {
+    cursor: pointer;
+}
+
+#content {
+    background-color: #F7F7F7;
+}
+
+#content-center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#article {
+    background-color: #fff;
+    padding: 40px 18px 30px 30px;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#article p {
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+#space-line {
+    margin: 0 40px 20px 0;
+    height: 1px;
+    background-color: #eee;
+}
+
+#page-turn {
+    background-color: #fff;
+    padding: 20px 0 0 40px;
+    height: 100px;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#page-turn p {
+    margin-top: 12px;
+}
+
+#page-turn span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#page-turn a {
+    font-size: 14px;
+    color: #828282;
+}
+
+#content {
+    margin-bottom: 36px;
+}

@@ -1,0 +1,173 @@
+#content {
+    background-color: #F7F7F7;
+}
+
+#content-center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.upload_left img {
+    vertical-align: middle;
+}
+
+.upload_left {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+.upload_right {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    color: #828282;
+    font-size: 15px;
+    padding:10px 25px 0px 10px;
+}
+
+.upload_right a {
+    color: #828282;
+    font-size: 12px;
+}
+
+.upload-right:hover {
+    cursor: pointer;
+}
+
+.upload-right span {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.upload_right a:hover {
+    cursor: pointer;
+}
+
+#breadcrumbNav-self {
+    padding: 10px 10px 0 18px;
+}
+
+#list {
+    background-color: #ffffff;
+    margin-top: 12px;
+}
+
+#title {
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    margin: 0 16px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.box-header {
+    display: inline-block;
+}
+
+#list {
+	padding-bottom: 30px;
+}
+
+#list .dom {
+    width: 176px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 16px;
+    margin-left: 17px;
+    position: relative;
+}
+
+#list .dom:hover {
+    cursor: pointer;
+}
+
+#list .dom p {
+    color: #999;
+    font-family: "sans-serif";
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #383838;
+
+}
+
+#list .dom p:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+    border-bottom:1px solid #7b7b7b;
+}
+
+#list .dom span {
+    color: #999;
+    display: inline-block;
+    width: 170px;
+    font-family: "sans-serif";
+    margin-bottom: -6px;
+    font-size: 14px;
+    color: #383838;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#list .dom span:hover {
+    cursor: pointer;
+    border-bottom:1px solid #7b7b7b;
+}
+
+
+#list .dom a {
+    color: #828282;
+    display: inline-block;
+    width: 170px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+
+#list .dom img {
+    width: 182px;
+    height: 102px;
+    margin-bottom: 14px;
+}
+
+#paging {
+    padding-bottom: 50px;
+    background: white;
+}
+
+#paging .nav-cont {
+    padding-top: 20px;
+}
+
+#footer {
+    margin-top: 36px;
+}
+
+.delete {
+    width: 36px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #EEEEEE;
+    color: #383838;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: -7px;
+    display: none;
+}
+
+.dom:hover .delete {
+    display: block;
+}
+
+.video_icon {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 24px;
+    left: 64px;
+    background: url('../images/display.png') no-repeat;
+}

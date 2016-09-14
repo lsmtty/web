@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import "./base/_base";
+#album-mssage {
+    @extend %pad-19;
+    .album-pic {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin: 20px 20px 0 0;
+        background: red;
+    }
+    .album-hm {
+        float: left;
+        line-height: 38px;
+        padding-top: 20px;
+    }
+    .album-hm {
+        float: left;
+        line-height: 38px;
+        padding-top: 20px;
+    }
+    .ablum-set {
+        height: 20px;
+        line-height: 20px;
+        padding: 20px 0 10px 0;
+        border-bottom: 1px dashed $borderColor;
+    }
+    .photos-set {
+        float: left;
+        width: 75px;
+        cursor: pointer;
+        background: url(../images/bj.png) no-repeat -135px -114px;
+    }
+    .pho-aset {
+        display: none;
+        float: left;
+        font-size: 14px;
+        margin-left: 20px;
+        color: $grayText;
+        cursor: pointer;
+    }
+    .ablum-photos {
+        width: 978px;
+        padding-bottom: 20px;
+    }
+    .aphoto-li {
+        float: left;
+        margin: 17px 17px 0 0;
+        position: relative;
+        &:hover .set-box{
+            display: block;
+        }
+    }
+    .aphoto {
+        width: 176px;
+        height: 176px;
+        border: 1px solid $borderColor;
+    }
+    .set-list{
+        width: 85px;
+    }
+    .pho-radio {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #d9e1ee;
+        background: #fff;
+        cursor: pointer;
+    }
+    .pho-radio-active {
+        background: url(../images/bj.png) no-repeat 0 -329px;
+    }
+}

@@ -1,0 +1,76 @@
+#publish-send-icon {
+	margin-left: 82%;
+}
+
+.block-title-bar>span:last-child {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	cursor: pointer;
+	line-height: 20px;
+	color: #828282;
+}
+
+.news-list-item {
+	height: 58px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.news-list-item span {
+	display: inline-block;
+}
+
+.article-name {
+	width: 350px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font: 14px "微软雅黑";
+	color: #383838;
+	margin: 22px 0px 0px 14px;
+}
+
+.article-author {
+	width: 70px;
+	font: 14px "微软雅黑";
+	color: #383838;
+	margin-left: 0px;
+	margin-bottom: 15px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.article-name>a:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #7b7b7b;
+}
+
+.news-publish-time {
+	color: #828282;
+	font: 12px "微软雅黑";
+	margin-bottom: 17px;
+	margin-left: 300px;
+	vertical-align: middle;
+}
+
+.delete-area {
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	width: 25px;
+	margin-bottom: 15px;
+	margin-left: 62px;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+
+.delete-area span {
+	display: inline-block;
+	color: #828282;
+}
+
+.icon-delete {
+	margin-left: 2px;
+}

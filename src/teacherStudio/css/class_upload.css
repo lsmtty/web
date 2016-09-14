@@ -1,0 +1,143 @@
+#breadcrumb-nav {
+    height: 30px;
+}
+
+#breadcrumb-nav a {
+    line-height: 30px;
+    color: #828282;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#breadcrumb-nav span {
+    line-height: 30px;
+    color: #828282;
+    font-size: 12px;
+}
+
+#release_details {
+    height: 500px;
+    background-color: #ffffff;
+    position: relative;
+    border: 1px solid #EEEEEE;
+}
+
+.rel {
+    padding: 30px 0 0 35px;
+}
+
+.file-type {
+    color: #828282;
+}
+
+#file-type-size {
+    color: #000000;
+}
+
+.necessary {
+    color: #ff0000;
+    padding-right: 10px;
+    line-height:30px;
+    display: inline-block;
+}
+
+.title_top {
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    /*float: left;*/
+}
+
+.title_bottom {
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+}
+
+li {
+    position: relative;
+}
+
+.input_title {
+    width: 360px;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid #EEEEEE;
+}
+
+#content {
+    margin-bottom: 16px;
+}
+
+#li_bottom {
+    margin-top: 25px;
+}
+
+.icon-star {
+    margin-top: 3.5px;
+    /*float: left;*/
+}
+
+.starBox {
+    background-color: #0000ff;
+    width: 60px;
+}
+
+.selectedBox {
+    background-color: yellow;
+    width: 500px;
+}
+
+.kind {
+    line-height: 24px;
+    font-size: 14px;
+    margin: 6px 0;
+}
+.kind-title {
+    float: left;
+    width: 50px;
+}
+.kind-list{
+    float: left;
+    width: 850px;
+}
+
+.kind-li {
+    float: left;
+    padding: 0 11px;
+    margin-right: 12px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.kind-li:hover {
+    color: #3999e3
+}
+
+#breadcrumb-nav #current {
+    line-height: 30px;
+    color: #383838;
+    font-size: 12px;
+}
+
+.activeLi:hover{
+    color: #fff
+}
+.activeLi {
+    background-color: #3999e3;
+    color: #fff;
+}
+
+.progress-bar {
+    width: 35px;
+    height: 35px;
+    margin-left: 290px;
+}
+
+#upload-box{
+	padding-top: 12px;
+}

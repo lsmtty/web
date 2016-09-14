@@ -1,0 +1,58 @@
+@charset "utf-8";
+$grayText:#282828;
+$blackText:#383838;
+$blueText:#3498d8;
+$whiteText:#fff;
+$borderColor:#d7e1ef;
+$min-text:12px;
+$middle-text:14px;
+$big-text:16px;
+%pad-19 {
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    padding: 0 19px;
+    background: $whiteText;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+%textEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+%btn {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: $min-text;
+    border-radius: 2px;
+    margin: 0 5px;
+}
+/*会话提示框*/
+%dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+}
+@mixin btn($width:0,$height:0,$boolean:true){
+    width: $width;
+    height: $height;
+    line-height: $height;
+    @extend %btn;
+    @if $boolean {
+        color: $whiteText;
+        background-color: $blueText;
+    }
+    @else {
+        color: $grayText;
+        background-color: $whiteText;
+        border:1px solid $borderColor;
+    }
+}
+/*模块盒子*/
+@mixin boxSize($width:0,$height:0){
+    width: $width;
+    height: $height;
+    @extend %pad-19;
+}

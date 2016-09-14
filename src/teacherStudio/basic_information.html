@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>工作室-详情</title>
+	<link href="./css/teacherResearch.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../base/css/base.css" />
+	<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/basic_information.css" />
+	<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="./js/config.js"></script>
+	<script src="js/basic_information.js"></script>
+	<script src="../base/component/RichText/ueditor.config.js" type="text/javascript"></script>
+	<script src="../base/component/RichText/ueditor.all.min.js" type="text/javascript"></script>
+	<script src="../base/js/tools.js"></script>
+	<script src="./js/teacherStudioViewHelper.js" type="text/javascript"></script>
+	<script src="./js/teacherStudioHelper.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="banner">
+	</div>
+	<div class="wrap" id="middle-content">
+		<div id="contentNav">
+		</div>
+		<div id="breadcrumb-nav">
+			<a href="workspace_index.html" style="margin-left: 18px;">首页 </a>
+			<span>&gt;</span>
+			<span id="current">基本资料</span>
+		</div>
+		<div id="upload-box">
+			<div id="title">
+				<h2 class="box-header">
+					<span class="header-title">
+                            基本资料
+                        </span>
+				</h2>
+				<a id="main_edit" href="basic_information_edit.html" style="display: none;">编辑</a>
+			</div>
+			<div id="left-box">
+				<div class="line-box clearFix">
+					<div class="title">
+						工作室名称 :
+					</div>
+					<ul class="kind-list clearFix">
+						<p class="line-box-title" id="studio-name"></p>
+					</ul>
+				</div>
+				<div class="line-box clearFix">
+					<div class="title">
+						教学学段 :
+					</div>
+					<ul class="kind-list clearFix" id="studio-period">
+						<p class="line-box-title"></p>
+					</ul>
+				</div>
+				<div class="line-box clearFix">
+					<div class="title">
+						教学学科 :
+					</div>
+					<ul class="kind-list clearFix" id="studio-subject">
+						<p class="line-box-title"></p>
+					</ul>
+				</div>
+				<div class="line-box clearFix">
+					<div class="title">
+						工作室介绍 :
+					</div>
+					<ul class="kind-list clearFix">
+						<p class="line-box-title" id="studio-introduce"></p>
+					</ul>
+				</div>
+				<div class="line-box clearFix">
+					<div class="title">
+						工作室宣传图片
+					</div>
+					<div id="studio-img">
+						<div id="img-avatar">
+							<img src="images/class.jpg" id="myPic">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="right-box">
+				<img id="studioImg" src="./images/studio_default_pic.png">
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+
+</html>

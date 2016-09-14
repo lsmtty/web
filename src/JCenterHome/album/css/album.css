@@ -1,0 +1,51 @@
+@charset "UTF-8";
+#album-box {
+  border: 1px solid #d7e1ef;
+  border-radius: 4px;
+  padding: 0 19px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#album-box .p-album-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*会话提示框*/
+/*模块盒子*/
+/*相册*/
+#album-box .albums {
+  width: 980px;
+  padding-bottom: 20px;
+}
+#album-box .p-album {
+  float: left;
+  width: 176px;
+  height: 210px;
+  margin: 5px 20px 5px 0;
+  position: relative;
+}
+#album-box .p-album:hover .set-box {
+  display: block;
+}
+#album-box .album-bottom {
+  line-height: 34px;
+  background-color: #f2f7fb;
+}
+#album-box .p-album-name {
+  float: left;
+  margin-left: 15px;
+  max-width: 100px;
+}
+#album-box .p-album-num {
+  float: right;
+  margin-right: 15px;
+}
+#album-box .set-list {
+  width: 60px;
+}
+
+/*# sourceMappingURL=album.css.map */

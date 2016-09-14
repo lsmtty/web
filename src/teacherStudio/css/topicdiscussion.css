@@ -1,0 +1,114 @@
+#maincontainer {
+     width:100%;     
+}
+
+.topic-list {
+    height: 60px;
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #eee;
+}
+
+/*li {
+    float:left;
+    height:60px;
+    line-height: 60px;    
+}*/
+
+.li-title {
+    width:100%;
+    line-height: 60px;
+    padding-left:20px;
+    font-size: 14px;
+}
+
+.li-prop {
+    width:400px;
+    text-align: left;
+
+}
+
+.li-creator {
+    width:10%;
+    line-height: 60px;
+    font-size:14px;
+}
+
+.li-createdate {
+    width:30%;
+    text-align: center;
+    line-height: 60px;    
+}
+
+.li-delete {
+    padding-top:15px;
+    float:right !important;
+    vertical-align: middle;
+    line-height:20px;
+    width:50px;
+    padding-right:28px;
+}
+
+.li-delete:hover {
+    color:#2c87ce;
+}
+
+.icondelete {
+    margin-top:10px;
+    background: url(../../base/images/delete.png) no-repeat;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.titlearea {
+    height:94px;
+    width:100%;
+    background-color: #eee;
+    color:#383838;
+    line-height: 33px;
+}
+
+.content {
+    width:100%;
+    font-size:14px;
+    color: #383838;
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.details-pre {
+    border-top: 1px solid #eee;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.create-topic {
+    right:58px;
+    position:absolute;
+    padding-top:15px;
+    color:#828282; 
+}
+
+.create-topic:hover {
+    color: #2c87ce;
+}
+
+.topic-list li {
+    float:left;
+}
+
+.maincontent{
+	background-color: white;
+    margin-bottom: 20px;
+    padding:0px 18px 0px 18px;
+}
+
+.comment-show{
+    right:20px;
+    position:absolute;
+    cursor: pointer;    
+}

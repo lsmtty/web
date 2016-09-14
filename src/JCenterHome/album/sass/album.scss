@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import "./base/_base";
+//相册
+/*相册*/
+#album-box {
+   @extend %pad-19;
+    .albums {
+        width: 980px;
+        padding-bottom: 20px;
+    }
+    .p-album {
+        float: left;
+        width: 176px;
+        height: 210px;
+        margin: 5px 20px 5px 0;
+        position: relative;
+        &:hover .set-box{
+            display: block;
+        }
+    }
+    .album-bottom{
+        line-height: 34px;
+        background-color: #f2f7fb;
+    }
+    .p-album-name {
+        float: left;
+        margin-left: 15px;
+        max-width: 100px;
+        @extend %textEllipsis;
+    }
+    .p-album-num {
+        float: right;
+        margin-right: 15px;
+    }
+    .set-list{
+        width: 60px;
+    }
+}

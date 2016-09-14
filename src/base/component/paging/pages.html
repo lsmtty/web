@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/page.css">
+	<style>
+		#paging{
+		    min-width: 600px;  /* 由于内部样式使用内联块 建议最小宽度不低于600px */
+		    width: 600px;
+		    margin: 200px auto;
+		    height: 74px;
+		    border:1px solid #000;
+		    
+		}
+	</style>
+</head>
+<body>
+
+<!-- 主体结构  -->
+	<div id="paging"></div>
+<!-- 主体结构 end -->
+
+<!-- 引用分页js 在此之前引入jq文件 -->
+	<script src="js/paging.js"></script>
+<!-- demo -->
+	<script>
+	/*
+		分页页数最多只显示8页，当走到最后一个时，自动切换到下一组8页
+		函数：pagingFn(pages,showPage,callBack,data)
+		
+		pages：传入的页数 (必须)
+
+		showPage：可以显示(看见)的页数 (可以不传入,默认显示8页)
+		
+		callBack：点击页数要执行的函数  (必须)
+			callBack中可加入两个参数
+				第一个参数 表示 当前页数-1
+				第二个参数 为 data 想要传入的数据(可以不传入)
+
+		data ：callBack中的第二个参数 (可以不传入)
+
+	 */
+		function fn(i,data){  //执行的函数
+			console.log(i,data)  //打印页数
+		}
+		pagingFn(20,fn,{'1':11});
+		//pagingFn(20,5,fn,{'1':11});
+
+
+
+
+	</script>
+</body>
+</html>
+
+
+

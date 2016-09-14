@@ -1,0 +1,112 @@
+/* shihao 2016/7/6 */
+@charset "utf-8";
+#content {
+	box-sizing: border-box;
+	padding-bottom: 20px;
+}
+.contet-body {
+	box-sizing: border-box;
+	position: relative;
+	min-height: 450px;
+	border: 1px solid #eee;
+	background: #fff;
+	font-size: 14px;
+	padding: 0 18px;
+	margin-bottom:20px;
+}
+.res-choose {
+	line-height: 44px;
+	height: 44px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 12px;
+	font-weight: normal;
+}
+.res-choose .title-list {
+	float: left;
+}
+.res-choose .title-li {
+	float: left;
+	padding: 0 10px;
+	font-size: 14px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.res-choose .title-active {
+	color: #383838;
+	line-height: 43px;
+	font-weight: bold;
+	border-bottom: 2px solid #3498d8;
+	margin-bottom: -1px;
+}
+.res-choose .send {
+	float: right;
+	padding:0 10px 0 25px; 
+	position: relative;
+	font-size: 12px;
+}
+.res-choose .send .icon-send {
+	position: absolute;
+	top: 12px;
+	left: 0;
+}
+.file-table {
+	text-align: center;
+	/*line-height: 60px;*/
+	font-size: 14px;
+	width: 100%;
+}
+.file-table th {
+	line-height: 44px;
+	background: #f6f6f6;
+	font-weight: normal;
+}
+.file-table td {
+	height: 60px;
+}
+.file-table .titles {
+	text-align: left;
+	text-indent: 138px;
+	width: 438px;
+}
+.file-table .types {
+	width: 82px;
+}
+.file-table .names {
+	width: 110px;
+}
+.file-table .times {
+	width: 170px;
+}
+.file-table .down {
+	width: 80px;
+}
+.file-table .file-title {
+	text-align: left;
+	max-width: 438px;
+}.file-table .file-name {
+	max-width: 110px;
+}
+.file-table .icon-word-small,.file-table .icon-pic-small,.file-table .icon-rar-small,.file-table .icon-zip-small,
+.file-table .icon-pdf-small,.file-table .icon-ppt-small {
+    vertical-align: middle;
+	margin:0 10px 0 20px;
+}
+/* 分页 */
+#page {
+	height: 80px;
+	width: 100%;
+	padding-top: 20px;
+	left: 0;
+	bottom: 0;
+}
+
+.error-page{
+	width: inherit;
+	position: absolute;
+	left: 420px;
+}
+
+
+.error-page span{
+	width: 150px;
+}

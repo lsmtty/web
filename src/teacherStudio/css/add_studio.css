@@ -1,0 +1,43 @@
+.maincontent {
+    background-color: white;
+    margin-bottom:20px;
+    padding:0px 18px 0px 18px;  
+}
+
+.item-list {
+    height:60px;
+    width:100%;
+    border-top: 1px solid #eee;
+}
+
+.item-name,.item-shcool {
+    font-size: 14px;
+    padding-left:10px;
+    line-height:20px;    
+}
+
+.li-props {
+    float:left;
+    padding:10px;
+    height:40px;
+    width:60%;
+}
+
+.li-quit {
+    float:right;
+    padding-right: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.li-quit:hover {
+    color:#2c87ce;
+}
+
+.avatar {
+    float:left;
+    width:auto;
+    height:40px;
+    padding-right:10px;
+}

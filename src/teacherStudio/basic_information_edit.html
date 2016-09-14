@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>工作室--详情修改</title>
+	<link rel="stylesheet" href="../base/css/base.css" />
+	<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/create_studio.css" />
+	<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="js/basic_information_edit.js"></script>
+	<script src="../lib/jquery/jquery.form.min.js" type="text/javascript"></script>
+	<script src="../base/component/RichText/ueditor.config.js" type="text/javascript"></script>
+	<script src="../base/component/RichText/ueditor.all.min.js" type="text/javascript"></script>
+	<script src="../base/js/tools.js"></script>
+	<script src="./js/teacherStudioViewHelper.js" type="text/javascript"></script>
+	<script src="./js/teacherStudioHelper.js" type="text/javascript"></script>
+	<script src="./js/config.js"></script>
+</head>
+
+<body>
+	<div id="banner"></div>
+	<div class="wrap" id="middle-content">
+		<div id="contentNav">
+		</div>
+		<div id="breadcrumb-nav">
+			<a href="workspace_index.html" style="margin-left: 18px;">首页 </a><span>&gt;</span>
+			<span id="current">基本资料修改</span>
+		</div>
+		<div id="title">
+			<h2 class="box-header">
+                    <span class="header-title">基本资料</span>
+            	</h2>
+		</div>
+		<div id="upload-box">
+			<form enctype="multipart/form-data" method="post" action="../ts/studio/save" id="form" name="form">
+				<div id="left-box">
+					<div class="line-box clearFix">
+						<div class="title">
+							<span class="icon-star"></span> 工作室名称
+						</div>
+						<input id="title-input" maxlength="30" class="message" type="text" name="name">
+						<div class="number-length">
+							(<span id="nuw-num">0</span>/30)
+						</div>
+					</div>
+					<div class="line-box clearFix">
+						<div class="title">
+							<span class="icon-star"></span> 教学学段
+						</div>
+						<ul class="kind-list clearFix" id="study_period">
+						</ul>
+					</div>
+					<div class="line-box clearFix">
+						<div class="title">
+							<span class="icon-star"></span> 教学学科
+						</div>
+						<ul class="kind-list clearFix" id="study_subject">
+						</ul>
+					</div>
+					<div class="line-box clearFix">
+						<div class="title">
+							<span class="icon-star"></span> 工作室介绍
+						</div>
+						<textarea id="title-details-input" name="introduction" maxlength="500" class="message" placeholder="请输入工作室介绍" style="width:600px; height: 160px"></textarea>
+					</div>
+					<div class="line-box clearFix">
+						<div class="title">
+							工作室宣传图片
+						</div>
+						<div id="studio-img">
+							<div id="img-avatar">
+								<img src="images/class.jpg" id="myPic">
+								<label>
+									<span>上传宣传照片</span>
+								<input id="check_avatar_img" name="propagandaFile" type="file" accept="*.jpg,*.jpeg,*.png,*.bmp" onchange="showAvatar('check_avatar_img','myPic','img-avatar')"/>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="right-box">
+					<img id="studioImg" src="./images/studio_default_pic.png">
+					<label>
+						<span>上传头像</span>
+						<input id="check_studio_img"  name="iconFile" type="file" accept="*.jpg,*.jpeg,*.png,*.bmp" onchange="showAvatar('check_studio_img','studioImg','right-box')"/>
+					</label>
+				</div>
+		</div>
+		<p class="btns">
+			<a class="bottom-btn btn">确定</a>
+			<a class="bottom-btn btn-active">取消</a>
+			<input type="text" name="id " id="inputId" style="display: none;" />
+			<input type="text" name="period " id="inputPeriod" style="display: none;" />
+			<input type="text" name="subject" id="inputSubject" style="display: none;" />
+		</p>
+	</div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+
+</html>

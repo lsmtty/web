@@ -1,0 +1,121 @@
+body {
+    background-color: #f7f7f7;
+}
+
+#header {
+    height: 60px;
+    background-color: #3598d9;
+}
+
+#middle {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#breadcrumb-nav {
+    height: 30px;
+    margin: 10px 0;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#breadcrumb-nav a {
+    line-height: 30px;
+    color: #828282;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#breadcrumb-nav span {
+    line-height: 30px;
+    color: #828282;
+    font-size: 12px;
+}
+
+#breadcrumb-nav #current {
+    line-height: 30px;
+    color: #383838;
+    font-size: 12px;
+}
+
+#title {
+    height: 92px;
+    background-color: #eee;
+    text-align: center;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#title .title-noborder {
+    padding-top: 18px;
+    font-size: 20px;
+    color: #383838;
+    font-weight: bold;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#title .add-time {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #383838;
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#title .text-time {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #828282;
+}
+
+#content-article {
+    background-color: #fff;
+    padding: 40px 18px 30px 30px;
+}
+
+#content-article p {
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+#content-article table {
+    margin: 0 auto;
+}
+
+#content_video {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 600px;
+    height: 360px;
+    padding: 20px 0;
+}
+
+#space-line {
+    margin: 0 40px 20px 0;
+    height: 1px;
+    background-color: #eee;
+}
+
+#page-turn {
+    background-color: #fff;
+    padding: 20px 0 0 40px;
+    height: 100px;
+}
+
+#page-turn p {
+    margin-top: 12px;
+}
+
+#page-turn span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#page-turn a {
+    font-size: 14px;
+    color: #828282;
+}
+
+#footer {
+    height: 168px;
+    margin: 0;
+    background-color: #ededed;;
+}

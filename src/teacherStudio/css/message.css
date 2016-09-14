@@ -1,0 +1,39 @@
+.mes-source {
+    padding-left:32px;
+    width:500px;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.mes-date {
+    padding: 0px 38px 0px 50px;
+}
+
+.message-item {
+    height:60px;
+    border-top: 1px solid #eee;
+    line-height:60px;
+    vertical-align: middle;
+}
+
+.mes-operate {
+    float:right !important;
+    padding-right:38px;
+}
+
+.message-item li {
+    float:left;
+}
+.right {
+    float:right !important;
+}
+
+.emptyMsg {
+    height:400px;
+    width:400px;
+    margin:0 auto;
+    margin-top:50px;
+    font-size:14px;
+}

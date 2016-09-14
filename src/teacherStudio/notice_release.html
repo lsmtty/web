@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title></title>
+		<link rel="stylesheet" href="css/notice_release.css" />
+		<link rel="stylesheet" href="../base/css/base.css" />
+		<link href="./css/teacherResearch.css" rel="stylesheet" />
+		<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+		<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+		<script src="js/teacherStudioViewHelper.js"></script>
+		<script src="../base/component/RichText/ueditor.config.js" type="text/javascript"></script>
+		<script src="../base/component/RichText/ueditor.all.min.js" type="text/javascript"></script>
+		<script src="../base/js/tools.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/teacherStudioHelper.js"></script>
+		<script src=" js/notice_release.js"></script>
+	</head>
+
+	<body >
+		<div id="banner"></div>
+		<div class="maincontainer" id="middle-content">
+			<div class="wrap">
+				<div id="contentNav">
+				</div>
+				<div class="breadcrumbNav">
+					<a href="workspace_index.html">首页 > </a>
+					<a href="notice_list.html">通知公告 > </a>
+					<span>发布公告</span>
+				</div>
+				<div class="content">
+					<div class="content-box">
+						<div class="content-line">
+							<span class="icon-star write-title"></span>
+							<span class="write-title" id="write-left-title">标题</span>
+							<input id="title-input" type="text" class="message" maxlength="30" placeholder="请输入主题"></input>
+							<div class="number-length">
+								(<span id="nuw-num">0</span>/30)
+							</div>
+						</div>
+						<div class="clearFix">
+							<span class="icon-star write-title"></span>
+							<span class="write-title">内容</span>
+							<div id="editor-box">
+								<script id="editor" type="text/plain"></script>
+							</div>
+						</div>
+						<div class="button-layout">
+							<span class="btn-confirm-blue btn-1" style="cursor: pointer" onclick="publishArticle();">确&nbsp;定</span>
+							<span class="btn-confirm-gray btn-2" style="cursor: pointer" onclick="cancleCreate();">取&nbsp;消</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id="footer">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var ue = UE.getEditor('editor');
+	</script>
+
+</html>

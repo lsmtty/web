@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>教学资源</title>
+	<link href="../base/css/base.css" rel="stylesheet">
+	<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+	<link href="./css/teachresource_list.css" rel="stylesheet">
+	<link href="../base/component/paging/css/page.css" rel="stylesheet">
+	<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="../base/js/tools.js"></script>
+	<script src="./js/teacherStudioViewHelper.js" type="text/javascript"></script>
+	<script src="./js/teacherStudioHelper.js" type="text/javascript"></script>
+	<script src="./js/config.js" type="text/javascript"></script>
+	<script src="./js/teachresource_list.js"></script>
+</head>
+
+<body>
+	<div id="banner"></div>
+	<div id="contentNav"></div>
+	<div id="content" class="wrap">
+		<div class="breadcrumbNav">
+			<a href="workspace_index.html">首页 > </a>
+			<span>教学资源</span>
+		</div>
+		<div class="contet-body gray-text" id="main-content">
+			<h2 class="res-choose clearFix">
+					<ul class="title-list clearFix">
+						<li class="title-li title-active" data-filetype="courseware">
+							课件
+						</li>						
+						<li class="title-li" data-filetype = "teachPlan">
+							教案
+						</li>
+						<li class="title-li" data-filetype = "material">
+						
+							教材
+						</li>
+						<li class="title-li" data-filetype = "exercise">
+							习题
+						</li>
+					</ul>
+					<a class="send gray-text hidden" href="javascript:;" id ="create-topic">
+						<span class="icon-send"></span>
+						上传资源
+					</a>
+				</h2>
+			<table class="file-table black-text">
+				<thead>
+					<tr class="thead">
+						<th class="titles">
+							标题
+						</th>
+						<th class="types">
+							格式
+						</th>
+						<th class="names">
+							上传人员
+						</th>
+						<th class="times">
+							时间
+						</th>
+						<th class="down">
+							下载
+						</th>
+						<th class="remove">
+							操作
+						</th>
+					</tr>
+				</thead>
+				<tbody class="tbody">
+
+				</tbody>
+			</table>
+			<div id="page">
+				<div id="paging"></div>
+			</div>
+		</div>
+
+	</div>
+	<div id="footer"></div>
+	<script src="../base/component/paging/js/newpaging.js"></script>
+</body>
+
+</html>

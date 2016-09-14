@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>教学资源-上传</title>
+	<link href="../base/css/base.css" rel="stylesheet">
+	<link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet">
+	<link href="./css/teachresource_upload.css" rel="stylesheet">
+	<link href="../base/component/paging/css/page.css" rel="stylesheet">
+	<script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="../base/js/tools.js"></script>
+	<script src="./js/config.js"></script>
+	<script src="./js/teacherStudioViewHelper.js" type="text/javascript"></script>
+	<script src="./js/teacherStudioHelper.js" type="text/javascript"></script>
+	<script src="../lib/jquery/jquery.form.min.js" type="text/javascript"></script>
+	<script src="./js/teachresource_upload.js"></script>
+</head>
+
+<body>
+	<div id="banner"></div>
+	<div id="contentNav"></div>
+	<div id="content" class="wrap">
+		<div class="nav-bar gray-text clearFix">
+			<div class="breadcrumbNav">
+				<a href="workspace_index.html">首页 > </a>
+				<a href="teachresource_list.html">教学资源 > </a>
+				<span class="black-text">上传资源</span>
+			</div>
+		</div>
+		<div id="upload-box">
+			<h2 class="res-choose clearFix">
+				<ul class="title-list clearFix">
+					<li class="title-li title-active" id="courseware" data-filetype="courseware">
+						课件
+					</li>
+					<li class="title-li" id="teachPlan" data-filetype="teachPlan">
+						教案
+					</li>
+					<li class="title-li" id="material" data-filetype="material">
+
+						教材
+					</li>
+					<li class="title-li" id="exercise" data-filetype="exercise">
+						习题
+					</li>
+				</ul>
+			</h2>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 资源名称
+				</div>
+				<input id="title-input" maxlength="30" class="message" type="text" placeholder="请输入资源名称">
+				<div class="number-length">
+					(<span id="nuw-num">0</span>/30)
+				</div>
+			</div>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 年级
+				</div>
+				<ul class="kind-list clearFix" id="yearlist">
+				</ul>
+			</div>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 学科
+				</div>
+				<ul class="kind-list clearFix" id="subjectlist">
+				</ul>
+			</div>
+			<div class="line-box clearFix">
+				<div class="title">
+					<span class="icon-star"></span> 上传资源
+				</div>
+				<div class="message file-message">
+					<label for="file">
+							<span class="file-val">
+								请选择要上传的资料
+							</span>
+						<form enctype = "multipart/form-data" method ="post" action="../ts/resource/upload"  id="uploadform">
+							<input id="file" type="file" name = "file" accept=".xls,.xlsx,.doc,.docx,.zip,.rar,.ppt,.pptx,.jpg,.img,.png,.pdf">
+							<img src ="./images/progressbar.gif" class = "progress-bar hidden" id = "progressbar"></img>
+							<input type="text" name="fileName" id="fileName" style="display: none;">
+                            <input type="text" name="title" id="inputName" style="display: none;">
+                            <input type="text" name="subjectId" id="inputsubjectId" style="display: none;">
+                            <input type="text" name="gradeId" id="inputgradeId" style="display: none;">
+							<input type="text" name="fileType" id="inputfileType" style="display: none;">
+                            <input type="text" name="studioId" id="inputstudioId" style="display: none;">
+				</form>
+						</label>
+				</div>
+
+				<span class="file-type">
+						支持格式：word，ppt，pdf，jpg，png，zip，rar
+					</span>
+
+			</div>
+			<p class="btns">
+				<a class="bottom-btn btn" id="confirmbtn" href="javascript:;">确定</a>
+				<a class="bottom-btn btn-active" id="canclebtn" href="javascript:;">取消</a>
+			</p>
+		</div>
+
+	</div>
+	<div id="footer"></div>
+</body>
+
+</html>

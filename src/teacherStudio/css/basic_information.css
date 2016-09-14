@@ -1,0 +1,315 @@
+body {
+	background-color: #F7F7F7;
+}
+
+#breadcrumb-nav {
+	height: 30px;
+	font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+#breadcrumb-nav a {
+	line-height: 12px;
+	color: #828282;
+	font-size: 13px;
+}
+
+#current {
+	line-height: 30px;
+	color: #828282;
+	font-size: 12px;
+}
+
+#breadcrumb-nav-right {
+	float: right;
+}
+
+#breadcrumb-nav-img {
+	float: right;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #ff0000;
+	margin-right: 10px;
+}
+
+#breadcrumb-nav #current {
+	line-height: 30px;
+	color: #383838;
+	font-size: 12px;
+}
+
+@charset "utf-8";
+.nav-list {
+	float: left;
+	padding-left: 10px;
+}
+
+.nav-li {
+	float: left;
+	line-height: 30px;
+}
+
+.nav-li .gray-text:hover {
+	text-decoration: underline;
+}
+
+#content {
+	box-sizing: border-box;
+	padding-bottom: 20px;
+}
+
+#upload-box {
+	box-sizing: border-box;
+	min-height: 520px;
+	padding-top: 30px;
+	background-color: #ffffff;
+}
+
+#upload-box .line-box {
+	padding-bottom: 20px;
+}
+
+#upload-box .title {
+	width: 118px;
+	float: left;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+#title {
+	margin-top: -20px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #EEEEEE;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+#title h2 {
+	display: inline-block;
+}
+
+#title a {
+	float: right;
+	color: #828282;
+	font-size: 14px;
+	display: inline-block;
+	padding-right: 10px;
+	width: 40px;
+	line-height: 40px;
+}
+
+.number-length {
+	float: left;
+	line-height: 40px;
+	margin: 0 20px;
+}
+
+#nuw-num {
+	font-weight: bold;
+}
+
+#upload-box .message {
+	float: left;
+	position: relative;
+	width: 340px;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	padding: 0 10px;
+	line-height: 40px;
+	height: 40px;
+	background: none;
+	color: #828282;
+}
+
+.kind-list {
+	float: left;
+	width: 600px;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.kind-list .active {
+	background-color: #3999e3;
+	color: #fff;
+}
+
+.kind-list .kind-li {
+	float: left;
+	padding: 0 11px;
+	cursor: pointer;
+	margin: 6px 12px 18px 0;
+}
+
+.kind-list .kind-li:hover {
+	color: #3999e3
+}
+
+.kind-list .active:hover {
+	color: #fff
+}
+
+#upload-box #title-input {
+	/*width: 600px;*/
+}
+
+#upload-box .icon-open {
+	float: right;
+	margin-top: 10px;
+}
+
+#upload-box .icon-star {
+	vertical-align: middle;
+}
+
+
+/* .file-message {
+	overflow: hidden;
+} */
+
+.file-val {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+#file {
+	position: absolute;
+	top: 0;
+	left: -999999px;
+}
+
+.file-type {
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+#upload-box .btns {
+	padding: 20px 0;
+	text-align: center;
+}
+
+#upload-box .bottom-btn {
+	margin: 0 10px;
+	width: 90px;
+	height: 34px;
+	line-height: 34px;
+}
+
+#left-box {
+	width: 792px;
+	display: inline-block;
+}
+
+#title-details-input {
+	width: 700px;
+	height: 170px;
+}
+
+#button {
+	margin: 0 auto;
+	width: 215px;
+	position: absolute;
+	left: 393px;
+	bottom: 50px;
+	text-align: center;
+	line-height: 34px;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+#button_left {
+	display: inline-block;
+	width: 90px;
+	height: 34px;
+	background-color: #3999e3;
+	float: left;
+	border-radius: 4px;
+}
+
+#button_right {
+	display: inline-block;
+	width: 90px;
+	height: 34px;
+	background-color: #ababab;
+	float: right;
+	border-radius: 4px;
+}
+
+.line-box-title {
+	margin-top: 6px;
+}
+
+.btns {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	width: 48px;
+	height: 26px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	background-color: #3999e3;
+	box-sizing: border-box;
+	font-size: 12px;
+	border-radius: 2px;
+}
+
+.btns .bottom-btn {
+	margin: 0 10px;
+	width: 90px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+
+.btns .btn-active {
+	background-color: #f6f6f6;
+}
+
+#middle-content {
+	margin-bottom: 36px;
+}
+
+#studio-img div {
+	width: 150px;
+	height: 150px;
+	background-size: 100%;
+	position: absolute;
+	left: 133px;
+	margin-top: 5px;
+}
+
+#studio-img {
+	height: 190px;
+}
+
+#studio-img img {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+}
+
+#right-box {
+	float: right;
+	width: 150px;
+	height: 150px;
+	top: 0;
+	margin-right: 50px;
+	margin-top: 20px;
+	position: relative;
+}
+
+#right-box img {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+}

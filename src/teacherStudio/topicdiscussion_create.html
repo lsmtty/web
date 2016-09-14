@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>课题研究</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href="../base/css/base.css" rel="stylesheet" />
+    <link href="../base/tpl/hd_ft/hd_ft.css" rel="stylesheet" />
+    <link href="./css/teacherResearch.css" rel="stylesheet" />
+
+    <script src="../lib/jquery/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="./js/teacherStudioViewHelper.js" type="text/javascript"></script>
+    <script src="./js/teacherStudioHelper.js" type="text/javascript"></script>
+
+    <script src="../base/component/RichText/ueditor.config.js" type="text/javascript"></script>
+    <script src="../base/component/RichText/ueditor.all.min.js" type="text/javascript"></script>
+    <script src="./js/config.js" type="text/javascript"></script>
+    <script src="../base/js/tools.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="banner"></div>
+    <div id="contentNav"></div>
+    <div class="maincontainer">
+        <div class="wrap">
+            <div class="breadcrumbNav" id="breadNav">
+                <a href="workspace_index.html">首页 > </a>
+                <a href="./topicdiscussion_list.html">课题研究 > </a>
+                <span>发表课题</span>
+            </div>
+            <div class="content">
+                <div class="content-box">
+                    <div class="content-line">
+                        <span class="icon-star write-title"></span>
+                        <span class="write-title">课题标题</span>
+                        <input type="text" maxlength="30" class="title-input" placeholder="请输入主题"></input>
+                        (<span id="titleCount">0</span>/30)
+                    </div>
+                    <div class="clearFix">
+                        <span class="icon-star write-title"></span>
+                        <span class="write-title">课题内容</span>
+                        <div id="editor-box">
+                            <script id="editor" type="text/plain"></script>
+                        </div>
+                    </div>
+                    <div class="button-layout">
+                        <span class="btn-confirm-blue btn-1" onclick="confirmCreate()">确&nbsp;定</span>
+                        <span class="btn-confirm-gray btn-2" onclick="cancleCreate()">取&nbsp;消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript"> 
+    window.UEDITOR_HOME_URL = '../../base/component/RichText/';
+    var ue = UE.getEditor('editor');
+
+</script>
+    <script src="./js/topicdiscussion_create.js" type="text/javascript"></script>
+</body>
+
+</html>
