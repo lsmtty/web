@@ -7,6 +7,7 @@
 		<script src="../../teacherStudio/js/require.js" data-main="./js/resultlist"></script>
 		<link rel="stylesheet" type="text/css" href="css/left_nav.css" />
 		<link rel="stylesheet" type="text/css" href="css/result_list.css" />
+		<link rel="stylesheet" type="text/css" href="../../base/component/paging/css/page.css" />
 	</head>
 
 	<body>
@@ -15,53 +16,64 @@
 			<div class="container clearFix">
 				<div class="left-nav">
 				</div>
-				<div class="right-article">
-					<div id="article-top-area">
-						<div id="serach-area" class="clearFix">
-							<div class="serach-box">
-								<span class="choose-value">全部</span>
-								<img src="./images/trangle_down.png" class="towards-img"></span>
-							</div>
-							<input type="text" placeholder="请输入搜索内容">
-						</div>
-						<input type="button" value="搜索" class="admit-button">
-						<div class="upload-button">
-							<div class="upload-area">
-								<img src="./images/upload_white.png" />
-								<span>上传</span>
-							</div>
-						</div>
-					</div>
-					<div class="list-area">
-						<div class="list-item">
-							<img class="item-type-image" src="./images/type_word.png">
-							<div class="item-message">
-								<div class="item-title">
-									<span>【家庭作业】【人教版】【一年级语文】作业试题标题作业试题标题</span>
+				<div class="right-container">
+					<div class="right-article">
+						<div id="article-top-area">
+							<div id="serach-area" class="clearFix">
+								<div class="serach-box">
+									<span class="choose-value">全部</span>
+									<img src="./images/trangle_down.png" class="towards-img"></span>
+									<ul style="display: none;">
+										<li class="darkbg"><span>全部</span></li>
+										<li><span>教案</span></li>
+										<li><span>课件</span></li>
+										<li><span>素材</span></li>
+										<li><span>其他</span></li>
+									</ul>
 								</div>
-								<span class="item-time">2016-06-09 16:00</span>
-								<div class="item-control">
-									<div class="delete-area">
-										<img class="item-control-img" src="./images/delete_black.png">
-										<span class="item-control-name">删除</span>
-									</div>
-									<div class="download-area">
-										<img class="item-control-img" src="./images/upload_black.png">
-										<span class="item-control-name">下载</span>
-									</div>
-									<div class="share-area">
-										<img class="item-control-img" src="./images/share_black.png">
-										<span class="item-control-name">分享</span>
-									</div>
-									<div class="disshare-area">
-										<img class="item-control-img" src="./images/disshare_black.png">
-										<span class="item-control-name">取消分享</span>
-									</div>
+								<input id="serach-content" type="text" placeholder="请输入搜索内容">
+							</div>
+							<input type="button" value="搜索" class="admit-button">
+							<div class="upload-button">
+								<div class="upload-area">
+									<img src="./images/upload_white.png" />
+									<span>上传</span>
 								</div>
 							</div>
 						</div>
+						<div class="list-area">
+							<div class="list-item">
+								<img class="item-type-image" src="./images/type_word.png">
+								<div class="item-message">
+									<div class="item-title">
+										<span>【家庭作业】【人教版】【一年级语文】作业试题标题作业试题标题</span>
+									</div>
+									<span class="item-time">2016-06-09 16:00</span>
+									<div class="item-control">
+										<div class="delete-area">
+											<img class="item-control-img" src="./images/delete_black.png">
+											<span class="item-control-name">删除</span>
+										</div>
+										<div class="download-area">
+											<img class="item-control-img" src="./images/upload_black.png">
+											<span class="item-control-name">下载</span>
+										</div>
+										<div class="share-area">
+											<img class="item-control-img" src="./images/share_black.png">
+											<span class="item-control-name">分享</span>
+										</div>
+										<div class="disshare-area">
+											<img class="item-control-img" src="./images/disshare_black.png">
+											<span class="item-control-name">取消分享</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+					<div id="paging"></div>
 				</div>
+
 			</div>
 		</div>
 		<div class="footer"></div>

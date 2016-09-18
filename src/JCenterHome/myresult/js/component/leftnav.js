@@ -61,7 +61,7 @@ define("leftnav", ['jquery'], function($) {
 			leftnav.parent.find(".category-name").bind("click", leftnav.categoryclick);
 			leftnav.parent.find(".self_edit_category").find("img").bind("click", leftnav.editname);
 			leftnav.parent.find(".add-show > span").bind("click", leftnav.editname);
-			leftnav.parent.find("input[type=button]").bind("click", leftnav.savename);
+			leftnav.parent.find("input[type=button]").unbind();
 		},
 		/**
 		 * 分类被点击
@@ -79,25 +79,28 @@ define("leftnav", ['jquery'], function($) {
 				leftnav.old_name = $(this).siblings("span").html().split("(")[0];
 			}
 			$(this).parents(".edit-li").children().hide().eq(1).show();
-			$(this).parents(".edit-li").find("input:text:first").focus().unbind().blur(leftnav.stopEdit);
+			$(this).parents(".edit-li").find("input:text:first").focus().unbind().blur(function(){
+				leftnav.stopEdit($(this));	
+			});
 		},
 		/**
 		 * 保存分类名字
 		 */
-		savename: function() {
-			var newName = $(this).siblings("input[type=text]").attr("value");
-			if(newName == leftnav.old_name) {
+		savename: function(item) {
+			var newName = item.val();
+			if(newName == leftnav.old_name || newName == undefined) {
 				return;
 			} else {
-				if($(this).parents(".edit-li").children().is(".self_edit_category")) {
+				if(item.parents(".edit-li").children().is(".self_edit_category")) {
 					/*$(this).parents(".edit-li").find("span").html(newName+);*/
 					//同步服务器，同时更改名字
 				} else {
 					//添加分类，同时同步服务器
+					leftnav.addCategroy(newName);
 				}
 			}
 			leftnav.old_name = "";
-			$(this).parents(".edit-li").children().hide().eq(0).show();
+			item.parents(".edit-li").children().hide().eq(0).show();
 		},
 		/**
 		 * 添加分类调用
@@ -105,7 +108,7 @@ define("leftnav", ['jquery'], function($) {
 		addCategroy: function(name) {
 			//使用名字添加分类，返回issuccess
 			var issuccess = true;
-			var insertHtml = '<li class="left-nav-li edit-li"><div class="slef_edit_category"><span>' + name + '(0)</span>';
+			var insertHtml = '<li class="left-nav-li edit-li"><div class="self_edit_category"><span>' + name + '(0)</span>';
 			insertHtml += '<img src="./images/edit.png"/></div><div class="categroy-edit" style="display:none;"><input type="text"/>';
 			insertHtml += '<input type="button" class="admit-button" value="保存" onclick="savename(this)"/></div></li>';
 			$(".left-nav-ul > li:last-child").before(insertHtml);
@@ -114,10 +117,10 @@ define("leftnav", ['jquery'], function($) {
 		/**
 		 * 点击其他地方还原编辑前状态
 		 */
-		stopEdit:function(){
-			$(this).val("");
+		stopEdit:function(item){
+			leftnav.savename(item);
+			item.val("");
 			leftnav.parent.find(".category-edit:visible").hide().unbind().siblings(".add-show,.self_edit_category").show();
-			//todo:可以有取消编辑是否保存的提醒框
 		}
 	}
 	return leftnav;
