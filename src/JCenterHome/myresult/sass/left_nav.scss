@@ -25,7 +25,7 @@
     .checked {
         background: $lightgray;
         span {
-            border-left: 5px solid $lightblue;
+            border-left: 5px solid $darkblue;
             padding-left: 21px;
             color: $darktext;
         }
@@ -54,7 +54,7 @@
                 margin-right: 12px;
             }
             span {
-                color: $lightblue;
+                color: $darkblue;
             }
         }
     }

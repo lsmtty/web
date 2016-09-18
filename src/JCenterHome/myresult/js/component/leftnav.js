@@ -55,14 +55,13 @@ define("leftnav", ['jquery'], function($) {
 			leftnav.parent.children("ul").append(innerHtml);
 		},
 		/*
-		 *绑定事件
+		 *统一绑定事件
 		 */
 		bindEvent: function() {
 			leftnav.parent.find(".category-name").bind("click", leftnav.categoryclick);
 			leftnav.parent.find(".self_edit_category").find("img").bind("click", leftnav.editname);
 			leftnav.parent.find(".add-show > span").bind("click", leftnav.editname);
 			leftnav.parent.find("input[type=button]").bind("click", leftnav.savename);
-			leftnav.parent.find(".edit-li").blur(leftnav.endEdit);
 		},
 		/**
 		 * 分类被点击
@@ -70,7 +69,7 @@ define("leftnav", ['jquery'], function($) {
 		categoryclick: function() {
 			leftnav.parent.find("li").removeClass("checked");
 			$(this).parents("li").addClass("checked");
-			//点击更改内容代码
+			//todo:选项被选择的调用函数
 		},
 		/**
 		 * 显示编辑内容区域
@@ -80,6 +79,7 @@ define("leftnav", ['jquery'], function($) {
 				leftnav.old_name = $(this).siblings("span").html().split("(")[0];
 			}
 			$(this).parents(".edit-li").children().hide().eq(1).show();
+			$(this).parents(".edit-li").find("input:text:first").focus().unbind().blur(leftnav.stopEdit);
 		},
 		/**
 		 * 保存分类名字
@@ -114,9 +114,10 @@ define("leftnav", ['jquery'], function($) {
 		/**
 		 * 点击其他地方还原编辑前状态
 		 */
-		endEdit:function(){
-			alert("onblur");
-			leftnav.parent.find(".category-edit:visible").hide().siblings(".add-show,.self_edit_category").show();
+		stopEdit:function(){
+			$(this).val("");
+			leftnav.parent.find(".category-edit:visible").hide().unbind().siblings(".add-show,.self_edit_category").show();
+			//todo:可以有取消编辑是否保存的提醒框
 		}
 	}
 	return leftnav;

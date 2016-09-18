@@ -3,18 +3,22 @@
 $white: #ffffff;
 $lightgray: #eef1f6;
 $lighttext: #828282;
+$lightbackground:#f5f6fa;
 $darktext: #383838;
-$lightblue: #1da1f3;
+$lightblue: #5db8fe;
+$darkblue:#1da1f3;
 $divider: #e1e1e1;
+$orangebackground:#ff9453;
 $smalltext: 14px;
 $largetext: 16px;
+$shadow:url(../images/shadow.png) repeat-x 0 center;
 @mixin set-radius() {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
 };
 .main {
-    background: $lightgray;
+    background: $lightbackground;
 }
 .container {
     width: 998px;
@@ -31,7 +35,7 @@ $largetext: 16px;
 }
 %ipt {
     @include set-radius();
-    border: 1px solid $lightblue;
+    border: 1px solid $darkblue;
 }
 %textEllipsis {
     overflow: hidden;
@@ -40,9 +44,9 @@ $largetext: 16px;
 }
 .admit-button {
     @extend %btn;
-    background: $lightblue;
+    background: $darkblue;
     color: $white;
     font-family: "microsoft yahei";
     font-size: 14px;
-    border: 1px solid $lightblue;
+    border: 1px solid $darkblue;
 }
