@@ -1,0 +1,219 @@
+@charset "utf-8";
+@import "../../sh/sass/base/_base";
+#contacts {
+    /*@extend %pad-19;
+    background: $whiteText;*/
+    .box-header {
+        border: none;
+    }
+    .group {
+        float: left;
+        width:196px;
+        background: #fff;
+        border: 1px solid $borderColor;
+        border-bottom: none;
+    }
+    .group-name {
+        display: block;
+        max-width: 158px;
+        text-indent: 20px;
+        border-left: 5px solid #fff;
+        @extend %textEllipsis;
+    }
+    .change {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 16px;
+        right: 15px;
+        background: red;
+        display: none;
+    }
+    .group-li,.add-group {
+        //height: 24px;
+        line-height: 24px;
+        padding: 15px 0;
+        position: relative;
+        color: $grayText;
+        font-size: $big-text;
+        cursor: pointer;
+        border-bottom: 1px solid $borderColor;
+
+    }
+    .group-li:hover,.group-active {
+        color: $blackText;
+        background: #eef1f6;
+        .change {
+            display: block;
+        }
+        .group-name {
+            border-left-color: $blueText;
+        }
+    }
+    .create-btn {
+        padding-left: 26px;
+        color: $blueText;
+    }
+    .create-box {
+        display: none;
+        #add-name {
+            width: 100%;
+            border: 1px solid $blueText;
+            box-sizing: border-box;
+            height:32px;
+            line-height:32px;
+            padding:0 10px;
+            border-radius: 2px;
+        }
+        padding: 7px;
+        .btn{
+            @include btn(66px,28px);
+            margin: 5px 0 0 4px;
+            float: right;
+        }
+        .cancel {
+            @include btn(66px,28px,false);
+        }
+    }
+}
+.friends {
+    float: right;
+    width: 786px;
+    @extend %pad-15;
+    min-height: 340px;
+    padding-bottom: 100px;
+    background: $whiteText;
+    .friends-box {
+        width: 774px;
+    }
+    .friends-list {
+        float: left;
+        width: 174px;
+        height: 78px;
+        border: 1px solid #d7e1ef;
+        background: #f2f7fb;
+        margin: 17px 17px 0 0;
+        img {
+            float: left;
+            width: 48px;
+            height: 48px;
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 14px 11px 0;
+        }
+    }
+    .afriend-right {
+        float: left;
+        width: 100px;
+    }
+    .afriend-name {
+        line-height: 34px;
+        height: 34px;
+        margin-top: 9px;
+        a{
+            font-size: $middle-text;
+            display: inline-block;
+            max-width: 100px;
+            @extend %textEllipsis;
+        }
+    }
+}
+.afriend-set {
+    a {
+        color: $blackText;
+    }
+    position: relative;
+
+    .other-group {
+        float: left;
+        width: 44px;
+        height: 22px;
+        line-height: 22px;
+        color: #383838;
+        background: url(../../sh/images/bj.png) no-repeat -170px -112px;
+    }
+    .bar {
+        float: left;
+        width: 1px;
+        height: 14px;
+        margin: 4px 5px 0;
+        background: #d7e1ef;
+    }
+    .delete {
+        float: left;
+        width: 40px;
+        height: 22px;
+        text-align: center;
+        color: $blueText;
+        line-height: 22px;
+    }
+    .move-box {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 20px;
+        left: -8px;
+        width: 160px;
+        padding: 10px 0 0 13px;
+        border: 1px solid $borderColor;
+        background: #fff;
+    }
+    .other-li {
+        float: left;
+        width: 65px;
+        padding-left: 15px;
+        line-height: 28px;
+        height: 28px;
+        background: url(../../sh/images/bj.png) no-repeat -493px -134px;
+        span {
+            cursor: pointer;
+            display: inline-block;
+            max-width: 60px;
+            @extend  %textEllipsis;
+        }
+    }
+    .active {
+        background-position: -493px -159px;
+    }
+    .btn{
+        @include btn(50px,24px);
+        margin:5px 10px !important;
+    }
+    .cancel {
+        @include btn(50px,24px,false);
+    }
+}
+#class {
+    display: none;
+    .box-title {
+        line-height: 50px;
+        font-size: $middle-text;
+        font-weight: normal;
+        margin-bottom: -17px;
+    }
+}
+.search {
+    float: right;
+    height: 34px;
+    padding-top: 5px;
+    #add-friend,#search-box,.btn {
+        float: right;
+        margin-right: 10px;
+        font-size: $middle-text;
+    }
+    .btn {
+        @include btn(66px,34px);
+    }
+    #add-friend {
+        @include btn(90px,34px);
+    }
+    #search {
+        float: right;
+        font-size: $min-text;
+        @include text(180px,34px);
+        border: none;
+        margin-left: 110px;
+        display: block;
+    }
+}
+

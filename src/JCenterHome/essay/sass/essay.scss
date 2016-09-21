@@ -11,23 +11,336 @@
     }
     .essay-list-set {
         background: #e7ebf4;
-        /* display: none; */
+        display: none;
     }
     .top-set {
          float: left;
          line-height: 40px;
          margin: 0 20px 0 5px;
-         color: #3498d8;
+         color: $blueText;
          cursor: pointer;
      }
-    #all_onoff {
+    #all_onoff,.alog-onoff {
         float: left;
         width: 14px;
         height: 14px;
         margin: 14px 4px 0 6px;
     }
+    .alog-onoff {
+        display: none;
+    }
     #all-set-no {
         float: right;
     }
+    .essay-box {
+        float: left;
+        padding-bottom: 74px;
+        position: relative;
+        width: 703px;
+    }
+    .essay-right {
+        float: right;
+        width: 240px;
+        .essay-manage {
+            margin-top: 16px;
+            background: #f3f8fe;
+            border-radius: 2px;
+            @extend %pad-15;
+        }
+        .box-more {
+            float: right;
+            padding-right: 3px;
+            margin-top: 18px;
+            line-height: 12px;
+            font-size: 12px;
+            color: $grayText;
+        }
+        .group-title {
+            line-height: 32px;
+            position: relative;
+            padding-left: 2px;
+            cursor: pointer;
+            vertical-align: top;
+            padding-right: 30px;
+            @extend %textEllipsis;
+        }
+        .group-title-active {
+            background: #f3f1f2;
+        }
+        .group-num {
+            position: absolute;
+            top: 0;
+            right: 2px;
+            line-height: 32px;
+            color: $grayText;
+        }
+    }
+    .search-essay {
+        margin-top: 7px;
+        .search-title {
+            line-height: 34px;
+            font-weight: normal;
+        }
+        .search {
+            position: relative;
+            height: 51px;
+            border-bottom: 1px solid $borderColor;
+        }
+        #search-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 36px;
+            box-sizing: border-box;
+            padding: 5px 40px 5px 5px;
+            line-height: 24px;
+            background: none;
+            color: #6f6f6f;
+        }
+        #search-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            text-indent: -9999px;
+            background: url(../../sh/images/bj.png) no-repeat -110px -73px;
+        }
+    }
 }
-
+/**/
+.essay-li {
+    line-height: 40px;
+    position: relative;
+    a {
+        color: $blackText;
+    }
+    .alog-list-link {
+        max-width: 500px;
+        display: inline-block;
+        vertical-align: top;
+        @extend %textEllipsis;
+    }
+    .alog-time {
+        float: right;
+        padding-right: 75px;
+        line-height: 40px;
+        color: $grayText;
+    }
+    .alog-set {
+        position: absolute;
+        height: 40px;
+        width: 45px;
+        top: 0;
+        right: 8px;
+    }
+    .set-name {
+        color: $blueText;
+        cursor: pointer;
+        display: inline-block;
+        width: 40px;
+        position: relative;
+        z-index: 10;
+        line-height: 14px;
+    }
+    .alog-set-sj {
+        position: absolute;
+        top: 15px;
+        right: 8px;
+        width: 8px;
+        height: 12px;
+        background: url(../../sh/images/bj.png) no-repeat -281px -38px;
+    }
+    .set-sj-ok {
+        z-index: 3;
+        border: 1px solid $borderColor;
+        border-bottom: none;
+        background: #fff url(../../sh/images/bj.png) no-repeat -300px -39px;
+    }
+    .set-box {
+        z-index: 12;
+        position: absolute;
+        top: 27px;
+        right: 8px;
+        width: 64px;
+        line-height: 24px;
+        background: $whiteText;
+        border: 1px solid $borderColor;
+        text-align: center;
+        display: none;
+        height: auto;
+        p:hover {
+            background: $blueText;
+            a{
+                color: $whiteText;
+            }
+        }
+    }
+}
+.essay-li-color {
+    background: #eef5fb;
+}
+/**/
+/*写随笔*/
+#write {
+    @extend %pad-19;
+    background: $whiteText;
+    .write-list {
+        margin-top: 17px;
+    }
+    .write-title {
+        float: left;
+        width: 66px;
+        padding-left: 27px;
+        line-height: 40px;
+        background: url(../../sh/images/bj.png) no-repeat -397px -66px;
+    }
+    #group-name,.title-box{
+        float: left;
+        width: 228px;
+        height: 38px;
+        padding-right: 30px;
+        border: 1px solid $borderColor;
+        position: relative;
+    }
+    .title-box {
+        width: 536px;
+        padding: 0;
+    }
+    .write-input {
+        position: absolute;
+        top: 0;
+        height: 0;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px 0 10px;
+        line-height: 38px;
+        height: 38px;
+        background: none;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #essay-title {
+        padding: 0 10px;
+        cursor: text;
+    }
+    #group-class {
+        display: none;
+        position: absolute;
+        top: 39px;
+        left: -1px;
+        width: 100%;
+        line-height: 24px;
+        border: 1px solid $borderColor;
+        border-top: none;
+        background: #fff;
+        text-indent: 10px;
+        z-index: 3;
+    }
+    .select-class {
+        padding: 5px 0;
+        cursor: pointer;
+        &:hover {
+            background: $blueText;
+            color: $whiteText;
+        }
+    }
+    .sanjiao {
+        top: 18px;
+        right: 8px;
+    }
+    .write-allnum {
+        float: left;
+        line-height: 40px;
+        padding-left: 10px;
+        color: $grayText;
+    }
+    #new-num {
+        color: $blackText;
+    }
+    #write-box {
+        float: left;
+        width: 844px;
+        padding-bottom: 76px;
+        position: relative;
+    }
+    .btns {
+        z-index: 9999;
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 55px;
+    }
+}
+/*随笔分类*/
+#essay-group {
+    @extend %pad-19;
+    background: $whiteText;
+    .group-li {
+        padding-left: 5px;
+    }
+    .group-all {
+        float: left;
+        width: 700px;
+        min-height: 230px;
+        padding-bottom: 74px;
+    }
+    .set-logs-hint {
+        font-size: $big-text;
+        float: right;
+        width: 238px;
+        height: 98px;
+        border: 1px solid $borderColor;
+        margin-top: 16px;
+        background: #f3f8fe;
+        padding-bottom: 20px;
+        span {
+            display: block;
+            padding-left: 26px;
+            width: 68px;
+            margin: 20px auto 10px;
+            background: url(../../sh/images/bj.png) no-repeat -401px -43px;
+        }
+        p {
+            font-size: $min-text;
+            line-height: 30px;
+            text-align: center;
+            color: $blueText;
+        }
+    }
+}
+/*随笔详情*/
+#essay-detials {
+    @extend %pad-19;
+    background: $whiteText;
+    .title {
+        line-height: 44px;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+    .message {
+        margin-bottom: 10px;
+        margin-left: -19px;
+    }
+    li {
+        float: left;
+        line-height: 14px;
+        padding: 0 15px 0 19px;
+        margin: 8px 0;
+        border-right: 1px solid $borderColor;
+        span {
+            color: $grayText;
+        }
+    }
+    .last {
+        border: none;
+    }
+    #content {
+        padding: 10px 0;
+        word-wrap: break-word;
+    }
+}

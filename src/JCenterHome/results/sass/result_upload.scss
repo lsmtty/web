@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import "base.scss";
+.breadline {
+    height: 36px;
+    span {
+        color: $lighttext;
+        font-size: $tinytext;
+        display: inline-block;
+        line-height: 12px;
+        vertical-align: top;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+}
+.upload-area {
+    border: 1px solid $divider;
+    border-right: 2px solid $divider;
+    margin-bottom: 40px;
+    .upload-top-area {
+        height: 35px;
+        width: inherit;
+        background: $shadow;
+        padding: 17px 0 0 18px;
+        border-bottom: 1px solid $divider;
+        span {
+            display: inline-block;
+            font-size: $largetext;
+            line-height: $largetext;
+            font-weight: bold;
+        }
+    }
+    .upload-article {
+        padding: 32px 74px 40px 66px;
+        background: $white;
+        .upload-item {
+            height: 36px;
+            background: url("../images/star.png") no-repeat 0 center;
+            display: inline-block;
+            width: 858px;
+            font-size: 0;
+            margin-bottom: 20px;
+            .upload-name {
+                display: inline-block;
+                font-size: $smalltext;
+                color: $lighttext;
+                margin-top: 11px;
+                margin-left: 14px;
+            }
+            .choose-box {
+                position: relative;
+                border: 1px solid $divider;
+                display: inline-block;
+                width: 248px;
+                height: inherit;
+                margin-left: 14px;
+                vertical-align: top;
+                color: $darktext;
+                font-size: $smalltext;
+                background: url("../images/trangle_down.png") no-repeat 231px 11px;
+                .choose-value {
+                    margin-top: 11px;
+                    display: inline-block;
+                    margin-left: 12px;
+                }
+            }
+            .upload-title {
+                color: $lighttext;
+                background: none;
+                width: 550px;
+            }
+            input[name=title]{
+                margin-left: 14px;
+                width: 733px;
+                height: 32px;
+                padding-left: 12px;
+                border:1px solid $divider;
+            }
+            
+            input[type=button]{
+                margin-left: 14px;
+                color: $white;
+                width: 113px;
+                height: 38px;
+                font-size: $largetext;
+                background: $orangebackground;
+                &:hover{
+                    background: #ff6c12;
+                }
+                @extend %btn;
+            }
+            .number-length{
+                display: inline-block;
+                font-size: $largetext;
+                margin-left: 14px;
+            }
+        }
+        .input-hide input {
+            display: none;
+        }
+        .share-advise{
+            color: #7785a0;
+            font-size: $tinytext;
+            display: block;
+            margin: -4px 0px 30px 40px;
+        }
+        .commit-area{
+            width: 268px;
+            margin: 0 auto;
+            input{
+                width: 113px;
+                height: 38px;
+            }
+            .cancel-button{
+                margin-left:33px ;
+            }
+        }
+    }
+    #delete-file{
+        @extend %textEllipsis;
+        margin-left: 16px;
+        margin-top: 2px;
+        display: none;
+        color: $lighttext;
+        font-size: $smalltext;
+        width: 484px;
+        div{
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+            vertical-align: text-bottom;
+            cursor: pointer;
+            display: inline-block;
+            background: url(../images/close_white.png) no-repeat;
+            &:hover{
+                background: url(../images/close_blue.png) no-repeat;
+            }
+        }
+    }
+}

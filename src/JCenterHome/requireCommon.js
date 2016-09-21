@@ -11,5 +11,5 @@ define("requireCommon", ['../../teacherStudio/js/require'], function(requirejs) 
 		enforeDefine: true
 	});
 	return {
-	}
-})
+	};
+});

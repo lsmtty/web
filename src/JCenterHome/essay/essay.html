@@ -8,41 +8,108 @@
     <link rel="stylesheet" href="../../base/css/base.css">
     <link rel="stylesheet" href="../sh/css/common.css">
     <link rel="stylesheet" href="./css/essay.css">
+    <link rel="stylesheet" href="../../base/tpl/JCenterHome_hd/css/hd_ft.css">
 </head>
 <body>
-
-    <div class="wrap">
-        <div id="essay">
-            <h2 class="box-header text-mid">
-                <span>随笔</span>
-                <ul class="title-right">
-                    <li id="write-essay" class="tr-list">
-                        <span class="text-icon icon-24"></span>
-                        写日志
+<div id="header"></div>
+<div id="html-content">
+    <div id="essay" class="wrap">
+        <h2 class="box-header">
+            <span>随笔</span>
+            <ul class="title-right">
+                <li id="write-essay" class="tr-list">
+                    <a href="./essay-write.html">
+                        <span class="text-icon icon-24"></span>写日志
+                    </a>
+                </li>
+                <li id="essays-set" class="tr-list">
+                    <a href="javascript:;">
+                        <span class="wirte-icon icon-24"></span>批量管理
+                    </a>
+                </li>
+            </ul>
+        </h2>
+        <div class="essay-box clearFix">
+            <div class="essay-list">
+                <p class="essay-list-set clearFix">
+                    <input id="all_onoff" type="checkbox">
+                    <label for="all_onoff">
+                        <span class="top-set" id="all-set-btn">全选</span>
+                    </label>
+                    <span class="top-set" id="all-remove-btn">删除</span>
+                    <span class="top-set" id="all-set-no">退出管理</span>
+                </p>
+                <ul class="essay-all">
+                    <li class="essay-li clearFix">
+                        <input class="alog-onoff" blogid="91" type="checkbox" name="checkbox">
+                        <span style="color:#ff4200;">[顶]</span>
+                        <a class="alog-list-link" blogid="91" href="./essay-details.html">随笔名称</a>
+                        <div class="alog-time">
+                            <span class="hs">2016-08-26 11:29:29</span>
+                        </div>
+                        <div class="alog-set">
+                            <span class="set-name">编辑</span><strong class="alog-set-sj"></strong>
+                            <div class="set-box">
+                                <p><a class="remove-alog" blogid="" href="javascript:;">删除日志</a></p>
+                                <p><a class="change-alog" blogid="" href="javascript:;">修改日志</a></p>
+                                <p><a class="alog-removetop" blogid="" href="javascript:;">取消置顶</a></p>
+                            </div>
+                        </div>
                     </li>
-                    <li id="essays-set" class="tr-list">
-                        <span class="wirte-icon icon-24"></span>
-                        批量管理
+                    <li class="essay-li clearFix">
+                        <input class="alog-onoff" blogid="91" type="checkbox" name="checkbox">
+                        <span style="color:#ff4200;">[顶]</span>
+                        <a class="alog-list-link" blogid="91" href="javascript:;">随笔名称</a>
+                        <div class="alog-time">
+                            <span class="hs">2016-08-26 11:29:29</span>
+                        </div>
+                        <div class="alog-set">
+                            <span class="set-name">编辑</span><strong class="alog-set-sj"></strong>
+                            <div class="set-box">
+                                <p><a class="remove-alog" blogid="" href="javascript:;">删除日志</a></p>
+                                <p><a class="change-alog" blogid="" href="javascript:;">修改日志</a></p>
+                                <p><a class="alog-removetop" blogid="" href="javascript:;">取消置顶</a></p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-            </h2>
-            <div class="clearFix">
-                <div class="essay-list">
-                    <p class="essay-list-set clearFix">
-                        <input id="all_onoff" type="checkbox">
-                        <label for="all_onoff">
-                            <span class="top-set" id="all-set-btn">全选</span>
-                        </label>
-                        <span class="top-set" id="all-remove-btn">删除</span>
-                        <span class="top-set" id="all-set-no">退出管理</span>
-                    </p>
-                </div>
             </div>
         </div>
-
+        <div class="essay-right">
+            <div class="essay-manage pad-15">
+                <h2 class="box-header">
+                    <span>我的分类</span>
+                    <a id="group-set" class="box-more" href="./essay-group.html">管理</a>
+                </h2>
+                <ul>
+                    <li class="group-title clearFix group-title-active" type="">
+                        全部日志<span class="group-num">13</span>
+                    </li>
+                    <li class="group-title clearFix" type="">
+                        我的日记<span class="group-num">13</span>
+                    </li>
+                    <li class="group-title clearFix" type="">
+                        随笔<span class="group-num">13</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-essay">
+                <h2 class="search-title text-mid">搜索日志</h2>
+                <div class="search">
+                    <input id="search-text" type="text" value="请输入关键词"><a id="search-btn" href="javascript:;">搜索</a>
+                </div>
+            </div>
+            <div id="calendar">
+                <div class="calendar-top">
+                    <span class=" year-btn mo-left"></span><span class="year-num"><span id="year">2016</span>年</span><span class=" year-btn mo-right"></span>
+                </div>
+                <ul id="month" class="clearFix"></ul>
+            </div>
+        </div>
     </div>
+</div>
+<div id="footer"></div>
 
-
-    <script src="../../lib/requires/requires.js" data-main="js/essay"></script>
+<script src="../../lib/requires/requires.js" data-main="js/essay"></script>
 </body>
 </html>

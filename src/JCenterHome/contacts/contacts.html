@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="../../base/css/base.css">
+    <link rel="stylesheet" href="../sh/css/common.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="../../base/tpl/JCenterHome_hd/css/hd_ft.css">
+</head>
+<body>
+
+<div id="header"></div>
+<div id="html-content">
+    <div id="contacts" class="wrap">
+        <h2 class="box-header">
+            <a href="javascript:;">主页</a>><span class="middle-text" href="javascript:;">通讯录</span>
+            <div class="search clearFix">
+                <a class="btn" href="javascript:;">搜索</a>
+                <!--搜索框-->
+                <div id="search-box">
+                    <div class="search-type">
+                        <span class="sanjiao"></span>
+                        <span id="type">全部</span>
+                        <ul class="types">
+                            <li>我的班级</li>
+                            <li>我的好友</li>
+                        </ul>
+                    </div>
+                    <input id="search" value="请输入要搜索的内容" type="text">
+                </div>
+                <!--搜索框 end-->
+                <a id="add-friend" href="javascript:;">增加好友</a>
+            </div>
+        </h2>
+        <div class="clearFix">
+            <div class="group">
+                <ul type="class">
+                    <li class="group-li">
+                        <span class="group-name">我的班级(20)</span>
+                        <span class="change"></span>
+                    </li>
+                </ul>
+                <ul type="friend">
+                    <li class="group-li">
+                        <span class="group-name">我的朋友(20)</span>
+                        <span class="change"></span>
+                    </li>
+                </ul>
+                <div class="add-group">
+                    <div class="create-btn">
+                        <span class="icon"></span>+添加分类
+                    </div>
+                    <div class="create-box">
+                        <input id="add-name" maxlength="10" type="text">
+                        <p class="clearFix">
+                            <a class="cancel btn" href="javascript:;">取消</a>
+                            <a class="confirm btn" href="javascript:;">确定</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="friend" class="friends">
+                <ul class="friends-box clearFix">
+                    <li class="friends-list">
+                        <img src="http://192.168.0.48:8088/JCenterHome/static/images/defaultimage/people.gif">
+                        <div class="afriend-right">
+                            <p class="afriend-name">
+                                <a userid="" title="学校管理员" target="_blank" href="javascript:;">学校管理员</a>
+                            </p>
+                            <div class="afriend-set clearFix">
+                                <a class="other-group" href="javascript:;">分组</a>
+                                <span class="bar"></span>
+                                <a class="delete" userid="9793" href="javascript:;">删除</a>
+                                <div class="move-box">
+                                    <ul class="clearFix">
+                                        <li groupid="" class="other-li"><span>分组1</span></li>
+                                        <li groupid="" class="other-li"><span>分组2</span></li>
+                                        <li groupid="" class="other-li active"><span>分组3</span></li>
+                                    </ul>
+                                    <p class="btns clearFix">
+                                        <a class="btn confirm" groupid="" friendid="" href="javascript:;">确定</a>
+                                        <a class="btn cancel" href="javascript:;">取消</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="class" class="friends">
+                <div>
+                    <h3 class="box-title">我的老师(11)</h3>
+                    <ul class="friends-box clearFix">
+                        <li class="friends-list">
+                            <img src="http://192.168.0.48:8088/JCenterHome/static/images/defaultimage/people.gif">
+                            <div class="afriend-right">
+                                <p class="afriend-name">
+                                    <a userid="" title="学校管理员" target="_blank" href="javascript:;">学校管理员</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="friends-list">
+                            <img src="http://192.168.0.48:8088/JCenterHome/static/images/defaultimage/people.gif">
+                            <div class="afriend-right">
+                                <p class="afriend-name">
+                                    <a userid="" title="学校管理员" target="_blank" href="javascript:;">学校管理员</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="box-title">我的同学(32)</h3>
+                    <ul class="friends-box clearFix">
+                        <li class="friends-list">
+                            <img src="http://192.168.0.48:8088/JCenterHome/static/images/defaultimage/people.gif">
+                            <div class="afriend-right">
+                                <p class="afriend-name">
+                                    <a userid="" title="学校管理员" target="_blank" href="javascript:;">学校管理员</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="friends-list">
+                            <img src="http://192.168.0.48:8088/JCenterHome/static/images/defaultimage/people.gif">
+                            <div class="afriend-right">
+                                <p class="afriend-name">
+                                    <a userid="" title="学校管理员" target="_blank" href="javascript:;">学校管理员</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script src="../../lib/requires/requires.js" data-main="js/contacts"></script>
+</body>
+</html>

@@ -28,6 +28,7 @@ require(['layout'],function(aaa){
     }
 
     aaa.header(data);
+    aaa.footer();
 
 
 })

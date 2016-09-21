@@ -1,0 +1,275 @@
+.friends {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.friends {
+  padding: 0 15px;
+}
+
+#contacts .group-name, .friends .afriend-name a, .afriend-set .other-li span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#contacts .create-box .btn, #contacts .create-box .cancel, .afriend-set .btn, .afriend-set .cancel, .search .btn, .search #add-friend {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 2px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#contacts {
+  /*@extend %pad-19;
+  background: $whiteText;*/
+}
+#contacts .box-header {
+  border: none;
+}
+#contacts .group {
+  float: left;
+  width: 196px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+}
+#contacts .group-name {
+  display: block;
+  max-width: 158px;
+  text-indent: 20px;
+  border-left: 5px solid #fff;
+}
+#contacts .change {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  background: red;
+  display: none;
+}
+#contacts .group-li, #contacts .add-group {
+  line-height: 24px;
+  padding: 15px 0;
+  position: relative;
+  color: #828282;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #e1e1e1;
+}
+#contacts .group-li:hover, #contacts .group-active {
+  color: #383838;
+  background: #eef1f6;
+}
+#contacts .group-li:hover .change, #contacts .group-active .change {
+  display: block;
+}
+#contacts .group-li:hover .group-name, #contacts .group-active .group-name {
+  border-left-color: #1da1f2;
+}
+#contacts .create-btn {
+  padding-left: 26px;
+  color: #1da1f2;
+}
+#contacts .create-box {
+  display: none;
+  padding: 7px;
+}
+#contacts .create-box #add-name {
+  width: 100%;
+  border: 1px solid #1da1f2;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+#contacts .create-box .btn {
+  width: 66px;
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #1da1f2;
+  margin: 5px 0 0 4px;
+  float: right;
+}
+#contacts .create-box .cancel {
+  width: 66px;
+  height: 28px;
+  line-height: 28px;
+  color: #828282;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+.friends {
+  float: right;
+  width: 786px;
+  min-height: 340px;
+  padding-bottom: 100px;
+  background: #fff;
+}
+.friends .friends-box {
+  width: 774px;
+}
+.friends .friends-list {
+  float: left;
+  width: 174px;
+  height: 78px;
+  border: 1px solid #d7e1ef;
+  background: #f2f7fb;
+  margin: 17px 17px 0 0;
+}
+.friends .friends-list img {
+  float: left;
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 14px 11px 0;
+}
+.friends .afriend-right {
+  float: left;
+  width: 100px;
+}
+.friends .afriend-name {
+  line-height: 34px;
+  height: 34px;
+  margin-top: 9px;
+}
+.friends .afriend-name a {
+  font-size: 14px;
+  display: inline-block;
+  max-width: 100px;
+}
+
+.afriend-set {
+  position: relative;
+}
+.afriend-set a {
+  color: #383838;
+}
+.afriend-set .other-group {
+  float: left;
+  width: 44px;
+  height: 22px;
+  line-height: 22px;
+  color: #383838;
+  background: url(../../sh/images/bj.png) no-repeat -170px -112px;
+}
+.afriend-set .bar {
+  float: left;
+  width: 1px;
+  height: 14px;
+  margin: 4px 5px 0;
+  background: #d7e1ef;
+}
+.afriend-set .delete {
+  float: left;
+  width: 40px;
+  height: 22px;
+  text-align: center;
+  color: #1da1f2;
+  line-height: 22px;
+}
+.afriend-set .move-box {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  left: -8px;
+  width: 160px;
+  padding: 10px 0 0 13px;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+}
+.afriend-set .other-li {
+  float: left;
+  width: 65px;
+  padding-left: 15px;
+  line-height: 28px;
+  height: 28px;
+  background: url(../../sh/images/bj.png) no-repeat -493px -134px;
+}
+.afriend-set .other-li span {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 60px;
+}
+.afriend-set .active {
+  background-position: -493px -159px;
+}
+.afriend-set .btn {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #1da1f2;
+  margin: 5px 10px !important;
+}
+.afriend-set .cancel {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  color: #828282;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+#class {
+  display: none;
+}
+#class .box-title {
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: -17px;
+}
+
+.search {
+  float: right;
+  height: 34px;
+  padding-top: 5px;
+}
+.search #add-friend, .search #search-box, .search .btn {
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.search .btn {
+  width: 66px;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  background-color: #1da1f2;
+}
+.search #add-friend {
+  width: 90px;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  background-color: #1da1f2;
+}
+.search #search {
+  float: right;
+  font-size: 12px;
+  width: 180px;
+  height: 34px;
+  line-height: 34px;
+  color: #828282;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  padding: 0 10px;
+  border: none;
+  margin-left: 110px;
+  display: block;
+}
+
+/*# sourceMappingURL=contacts.css.map */

@@ -139,4 +139,39 @@
   position: relative;
 }
 
+#mainbo_footer {
+  background-color: #ededed;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #383838;
+}
+#mainbo_footer ul {
+  overflow: hidden;
+}
+#mainbo_footer ul li {
+  float: left;
+  width: 25%;
+  height: 100px;
+  border-left: 1px solid #cbcbcb;
+  margin-left: -1px;
+  padding-top: 30px;
+}
+#mainbo_footer img {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+  display: block;
+  margin-top: -15px;
+}
+#mainbo_footer p {
+  text-indent: 30px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+#mainbo_footer .main_last_msg p {
+  text-indent: 0px;
+  text-align: center;
+  line-height: 60px;
+}
+
 /*# sourceMappingURL=hd_ft.css.map */

@@ -7,7 +7,10 @@ require.config({
 require(['configurl'],function(configpaths){
     require.config(configpaths);
 
-    require(['jquery','tools','dialog'],function($,tools,dialog){
+    require(['jquery','tools','dialog','layout'],function($,tools,dialog,layout){
+        //header footer 布局
+        layout.header();
+        layout.footer();
         /*
         * 编辑框
         * */
@@ -49,5 +52,5 @@ require(['configurl'],function(configpaths){
             );
         });
     });
-})
+});
 

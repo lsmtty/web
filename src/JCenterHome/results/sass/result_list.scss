@@ -1,0 +1,181 @@
+@charset "utf-8";
+@import "base.scss";
+$piclist: delete upload share disshare; //图片列表
+$towords: bottom left right;
+.main {
+    height: 1500px;
+}
+.right-article {
+    float: right;
+    width: 786px;
+    #article-top-area {
+        height: 52px;
+        width: inherit;
+        background: $shadow;
+        border: 1px solid $divider;
+        #serach-area {
+            background: $white;
+            display: inline-block;
+            width: 283px;
+            border: 1px solid $divider;
+            margin: 9px 8px 9px 16px;
+            height: 32px;
+            .serach-box {
+                cursor: pointer;
+                display: inline-block;
+                width: 87px;
+                border-right: 1px solid $divider;
+                height: 32px;
+                vertical-align: top;
+                position: relative;
+                float: left;
+                background: url("../images/trangle_down.png") no-repeat 70px 9px;
+                span {
+                    display: inline-block;
+                    color: $darktext;
+                    font: 14px/14px "microsoft yahei";
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+                ul {
+                    width: inherit;
+                    position: absolute;
+                    top: 33px;
+                    left: -1px;
+                    z-index: 10;
+                    li {
+                        width: inherit;
+                        height: 31px;
+                        background: $white;
+                        @each $direction in $towords {
+                            border-#{$direction}: 1px solid $divider;
+                        }
+                        span {
+                            color: $lighttext;
+                        }
+                    }
+                    .darkbg {
+                        background: $lightgray;
+                        span {
+                            color: $darktext;
+                        }
+                    }
+                }
+            }
+            input[type=text] {
+                padding: 0 4px;
+                height: 32px;
+                width: 187px;
+                @extend %ipt;
+                border: 0;
+                float: left;
+                &:focus {
+                    border: 0;
+                }
+                font: 14px/16px "microsoft yahei";
+            }
+        }
+        input[type=button] {
+            height: 33px;
+            width: 66px;
+            background: $lightblue;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: top;
+            &:hover {
+                background: $darkblue;
+            }
+        }
+        .upload-button {
+            display: inline-block;
+            @extend %btn;
+            background: $orangebackground;
+            color: $white;
+            height: 40px;
+            width: 90px;
+            vertical-align: top;
+            margin-top: 6px;
+            margin-left: 292px;
+            position: relative;
+            span {
+                font: 16px/40px "microsoft yahei";
+            }
+            img {
+                width: 13px;
+                height: 16px;
+                margin: 12px 3px 0 -3px;
+            }
+        }
+    }
+    .list-area {
+        height: auto;
+        width: inherit;
+        position: relative;
+        .list-item {
+            background: $white;
+            @each $direction in $towords {
+                border-#{$direction}: 1px solid $divider;
+            }
+            padding: 18px 16px;
+            height: 54px;
+            width: 754px;
+            .item-type-image {
+                height: 54px;
+                width: 54px;
+            }
+            .item-message {
+                display: inline-block;
+                width: 691px;
+                .item-title {
+                    cursor: pointer;
+                    margin: 3px 3px 0 0;
+                    display: inline-block;
+                    width: 568px;
+                    font-size: $largetext;
+                    @extend %textEllipsis;
+                }
+                .item-time {
+                    display: inline-block;
+                    margin-top: 5px;
+                    float: right;
+                    font-size: $smalltext;
+                    color: $lighttext;
+                }
+                .item-control {
+                    margin: 8px 0 0 -2px;
+                    div {
+                        cursor: pointer;
+                        padding: 0 10px 0 18px;
+                        float: left;
+                        border-right: 1px solid $divider;
+                        zoom: normal;
+                        height: 14px;
+                        margin-left: 10px;
+                        color: $lighttext;
+                        img {
+                            margin-top: 5px;
+                        }
+                        &:hover {
+                            color: $darkblue;
+                        }
+                    }
+                    @each $picname in $piclist {
+                        .#{$picname}-area {
+                            background: url("../images/#{$picname}_black.png") no-repeat;
+                            &:hover {
+                                background: url("../images/#{$picname}_blue.png") no-repeat;
+                            }
+                        }
+                    }
+                    span {
+                        color: inherit;
+                        font-size: $smalltext;
+                        display: inline-block;
+                        vertical-align: top;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

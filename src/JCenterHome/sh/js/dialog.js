@@ -20,7 +20,7 @@ define('dialog',['jquery'],function($){
                     }else{
                         callBack();
                     }
-                };
+                }
                 $('#mask').remove();
                 $('.dialog-box').remove();
                 return false;
@@ -67,14 +67,14 @@ define('dialog',['jquery'],function($){
         changeAlbumDialog:function(callBack,albumData){
             var dialogTitle = '编辑相册';
             if( !albumData ){
-                dialogTitle = '创建相册'
+                dialogTitle = '创建相册';
                 albumData = {};
             }
             var albumNewData = {
                 'name': albumData.name || '',
                 'message':albumData.message || '',
                 'permission':albumData.permission || 0
-            }
+            };
             $('body').append('<div id="mask"></div>');
             $('body').append('<div id="changeAlbumDialog" class="dialog-box" style="display: block;">' +
                 '<h2 class="box-header">' +
@@ -148,12 +148,12 @@ define('dialog',['jquery'],function($){
         changeClassDialog:function(callBack,data){
             var dialogTitle = '修改分类';
             if( !data ){
-                dialogTitle = '创建相册'
+                dialogTitle = '创建相册';
                 data = {};
             }
             var className = {
                 'name': data.name || ''
-            }
+            };
             $('body').append('<div id="mask"></div>');
             $('body').append('<div id="changeClassDialog" class="dialog-box">' +
                 '<h2 class="box-header">' + dialogTitle + '</h2>' +
@@ -167,11 +167,11 @@ define('dialog',['jquery'],function($){
                 '<a id="cancel" href="javascript:;">取消</a>' +
                 '</p>' +
                 '</div>');
-            var $input = $('#change-className')
+            var $input = $('#change-className');
             $input.on('change',function(){
                 if( $(this).val().length > 10 ) $(this).val($(this).val().slice(0,10));
                 className.name = $(this).val();
-            })
+            });
             this.dialogClick(callBack,className);
         },
         /*
@@ -224,7 +224,7 @@ define('dialog',['jquery'],function($){
                     $groupList.show();
                 }else{
                     $groupList.hide();
-                };
+                }
                 return false;
             });
             var groupresult = {
@@ -236,7 +236,7 @@ define('dialog',['jquery'],function($){
                 $groupTarget.attr('groupid',$(this).attr('groupid'));
                 groupresult.name = $groupTarget.html();
                 groupresult.id = $groupTarget.attr('groupid');
-            })
+            });
             $('#mask,.dialog-box').on('click',function(){
                 $groupList.hide();
             });
@@ -246,7 +246,7 @@ define('dialog',['jquery'],function($){
          * 照片移动对话框
          * */
         photoMoveDialog:function(callBack,data){
-            var albumTarget = new Object();
+            var albumTarget = {};
             var albums = '';
             for(var i = 0; i<data.list.length;i++){
                 albums += '<li class="al-box" albumid="' + data.list[i].id + '" name="' + data.list[i].name + '" key="1">' +
@@ -259,7 +259,7 @@ define('dialog',['jquery'],function($){
                     '</div>' +
                     '<span class="box-radio"></span>' +
                     '</li>';
-            };
+            }
             $('body').append('<div id="mask"></div>');
             $('body').append('<div id="photoMoveDialog" class="dialog-box">' +
                 '<h2 class="box-header">移动到相册</h2>' +
@@ -281,5 +281,5 @@ define('dialog',['jquery'],function($){
             });
             this.dialogClick(callBack,albumTarget);
         }
-    }
-})
+    };
+});

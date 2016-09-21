@@ -1,6 +1,10 @@
 @charset "utf-8";
 //公共
 @import "./base/_base";
+#html-content {
+    padding: 20px 0;
+    box-sizing: border-box;
+}
 //盒子头部
 .box-header {
     height: 44px;
@@ -33,6 +37,9 @@
     .tr-list {
         float: left;
         cursor: pointer;
+        a{
+            color: $blackText;
+        }
     }
     .icon-24 {
         float: left;
@@ -159,17 +166,17 @@
         font-size: $middle-text;
         text-align: left;
     }
-    #confirm {
-        @include  btn(78px,34px,true);
-    }
-    #cancel {
-        @include  btn(78px,34px,false);
-    }
-    .btns {
-        text-align: center;
-        a {
-            margin: 0 10px !important;
-        }
+}
+#confirm {
+    @include  btn(78px,34px,true);
+}
+#cancel {
+    @include  btn(78px,34px,false);
+}
+.btns {
+    text-align: center;
+    a {
+        margin: 0 10px !important;
     }
 }
 /*删除提示框*/
@@ -349,5 +356,128 @@
     }
     .box-radio-active {
         background: url(../images/bj.png) no-repeat 0 -329px;
+    }
+}
+#calendar {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .calendar-top {
+        padding: 5px 0;
+        height: 24px;
+        border: 1px solid $borderColor;
+        text-align: center;
+        background: #f3f1f2;
+    }
+    .year-btn {
+        display: inline-block;
+        width: 16px;
+        height: 8px;
+        cursor: pointer;
+    }
+    .year-num {
+         display: inline-block;
+         padding: 0 25px;
+         line-height: 24px;
+     }
+    .mo-left {
+        background: url(../images/bj.png) no-repeat -191px 0;
+    }
+    .mo-right {
+        background: url(../images/bj.png) no-repeat -200px -25px;
+    }
+    #month {
+        border-right: 1px solid #d7e1ef;
+    }
+    .month-list {
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+        border: 1px solid #d7e1ef;
+        border-top: none;
+        border-right: none;
+        line-height: 44px;
+        text-align: center;
+    }
+    .month-active {
+        text-decoration: underline;
+        color: $blueText;
+    }
+}
+
+/*底部评论*/
+#reviews {
+    padding: 10px 0 60px 0;
+    position: relative;
+    .header{
+        line-height: 32px;
+        border-bottom: 1px solid $borderColor;
+        margin-top: 18px;
+        margin-bottom: 12px;
+        color: $blueText;
+        font-size: $big-text;
+    }
+    .review-box{
+        padding: 10px;
+        box-sizing: border-box;
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            resize: none;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        #confirm {
+            font-size: $big-text;
+            float: right;
+            margin-top: 10px;
+        }
+    }
+}
+
+/*模块顶部搜索选项*/
+#search-box {
+    display: inline-block;
+    line-height:34px;
+    position: relative;
+    background: #fff;
+    border: 1px solid $borderColor;
+    .search-type {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100px;
+        cursor: pointer;
+        text-indent: 10px;
+        border-right: 1px solid $borderColor;
+        .sanjiao {
+            top: 16px;
+            right: 7px;
+        }
+        #type {
+            display: block;
+            position: relative;
+            padding-right: 20px;
+            @extend %textEllipsis;
+        }
+    }
+    .types {
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid $borderColor;
+        background: #fff;
+        margin-top: -1px;
+        cursor: pointer;
+        top: 34px;
+        left:0;
+        display: none;
+    }
+    li {
+        @extend %textEllipsis;
+        &:hover{
+            color: $whiteText;
+            background: $blueText;
+        }
     }
 }

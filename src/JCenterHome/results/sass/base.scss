@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import "reset.scss";
+$white: #ffffff;
+$lightgray: #eef1f6;
+$lighttext: #828282;
+$lightbackground:#f5f6fa;
+$darktext: #383838;
+$lightblue: #5db8fe;
+$darkblue:#1da1f3;
+$divider: #e1e1e1;
+$orangebackground:#ff9453;
+$tinytext:12px;
+$smalltext: 14px;
+$largetext: 16px;
+$shadow:url(../images/shadow.png) repeat-x 0 center;
+@mixin set-radius($radius:2px) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+};
+.main {
+    background: $lightbackground;
+    width: 1920px;
+}
+.container {
+    width: 998px;
+    position: relative;
+    margin: 0 auto;
+}
+%btn {
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    @include set-radius();
+}
+%ipt {
+    @include set-radius();
+    border: 1px solid $darkblue;
+}
+%textEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.admit-button {
+    @extend %btn;
+    background: $darkblue;
+    color: $white;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    border: 1px solid $darkblue;
+}
+
+.cancel-button{
+    @extend %btn;
+    background: #acbbd0;
+    color: $white;
+}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.clearFix {
+  zoom: 1; }
+
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+input {
+  font-family: Microsoft YaHei;
+  color: #383838;
+  outline: none; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+.main {
+  background: #f5f6fa;
+  width: 1920px; }
+
+.container {
+  width: 998px;
+  position: relative;
+  margin: 0 auto; }
+
+.admit-button, .cancel-button, .left-nav-ul .category-edit input[type=button] {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px; }
+
+.left-nav-ul .category-edit input[type=text] {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border: 1px solid #1da1f3; }
+
+.left-nav-ul .left-nav-li span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.admit-button {
+  background: #1da1f3;
+  color: #ffffff;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  border: 1px solid #1da1f3; }
+
+.cancel-button {
+  background: #acbbd0;
+  color: #ffffff; }
+
+.left-nav-ul {
+  width: 196px;
+  float: left;
+  border: 1px solid #e1e1e1; }
+  .left-nav-ul .left-nav-li {
+    background: #ffffff;
+    height: 17px;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 18px 0; }
+    .left-nav-ul .left-nav-li span {
+      cursor: pointer;
+      display: inline-block;
+      width: 137px;
+      padding-left: 26px;
+      font: 16px/16px "微软雅黑";
+      color: #828282; }
+    .left-nav-ul .left-nav-li:hover span {
+      color: #383838; }
+  .left-nav-ul .checked {
+    background: #eef1f6; }
+    .left-nav-ul .checked span {
+      border-left: 5px solid #1da1f3;
+      padding-left: 21px;
+      color: #383838; }
+  .left-nav-ul .edit-li {
+    padding: 9px 0 8px;
+    height: 36px; }
+    .left-nav-ul .edit-li .self_edit_category {
+      margin-top: 10px; }
+      .left-nav-ul .edit-li .self_edit_category img {
+        cursor: pointer;
+        display: none;
+        width: 16px;
+        height: 16px; }
+      .left-nav-ul .edit-li .self_edit_category:hover img {
+        display: inline-block; }
+    .left-nav-ul .edit-li .add-show {
+      margin-top: 10px; }
+      .left-nav-ul .edit-li .add-show img {
+        width: 12px;
+        height: 12px;
+        vertical-align: baseline;
+        margin-right: 12px; }
+      .left-nav-ul .edit-li .add-show span {
+        color: #1da1f3; }
+  .left-nav-ul .category-edit {
+    padding-left: 8px; }
+    .left-nav-ul .category-edit input[type=text] {
+      padding: 0 4px;
+      height: 32px;
+      width: 124px;
+      font: 16px/16px "microsoft yahei"; }
+    .left-nav-ul .category-edit input[type=button] {
+      margin-left: 5px;
+      width: 45px;
+      height: 34px;
+      vertical-align: top; }
+
+/*# sourceMappingURL=left_nav.css.map */

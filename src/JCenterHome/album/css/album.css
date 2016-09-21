@@ -1,14 +1,17 @@
 @charset "UTF-8";
-#album-box {
-  border: 1px solid #d7e1ef;
+#album-box, #upload-box, #album-mssage {
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
-  padding: 0 19px;
   background: #fff;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-#album-box .p-album-name {
+#album-box, #upload-box, #album-mssage {
+  padding: 0 19px;
+}
+
+#album-box .p-album-name, #upload-box #al-classname, #upload-box .al-classnames {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -44,6 +47,141 @@
 }
 #album-box .set-list {
   width: 60px;
+}
+
+/*上传相册*/
+#upload-box .upload-box {
+  padding: 35px 0 50px 0px;
+}
+#upload-box .up-title {
+  float: left;
+  line-height: 30px;
+  width: 8%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#upload-box .album-class {
+  float: left;
+  width: 200px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #e1e1e1;
+  text-indent: 5px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+#upload-box .sanjiao {
+  top: 12px;
+  right: 8px;
+}
+#upload-box #al-classname {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#upload-box #al-classbox {
+  position: absolute;
+  top: 29px;
+  left: -1px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  display: none;
+  z-index: 10;
+  max-height: 268px;
+  overflow-y: auto;
+  margin-top: -1px;
+}
+#upload-box .al-classnames {
+  display: block;
+  color: #383838;
+}
+#upload-box .al-classnames:hover {
+  color: #fff;
+  background: #1da1f2;
+}
+#upload-box #wrapper {
+  width: 90%;
+  float: left;
+  margin: 0;
+}
+
+/*相册详情*/
+#album-mssage .album-pic {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: 20px 20px 0 0;
+  background: red;
+}
+#album-mssage .album-hm {
+  float: left;
+  line-height: 38px;
+  padding-top: 20px;
+}
+#album-mssage .album-hm {
+  float: left;
+  line-height: 38px;
+  padding-top: 20px;
+}
+#album-mssage .ablum-set {
+  height: 20px;
+  line-height: 20px;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px dashed #e1e1e1;
+}
+#album-mssage .photos-set {
+  float: left;
+  width: 75px;
+  cursor: pointer;
+  background: url(../../sh/images/bj.png) no-repeat -135px -114px;
+}
+#album-mssage .pho-aset {
+  display: none;
+  float: left;
+  font-size: 14px;
+  margin-left: 20px;
+  color: #828282;
+  cursor: pointer;
+}
+#album-mssage .ablum-photos {
+  width: 978px;
+  padding-bottom: 20px;
+}
+#album-mssage .aphoto-li {
+  float: left;
+  margin: 17px 17px 0 0;
+  position: relative;
+}
+#album-mssage .aphoto-li:hover .set-box {
+  display: block;
+}
+#album-mssage .aphoto {
+  width: 176px;
+  height: 176px;
+  border: 1px solid #e1e1e1;
+}
+#album-mssage .set-list {
+  width: 85px;
+}
+#album-mssage .pho-radio {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d9e1ee;
+  background: #fff;
+  cursor: pointer;
+}
+#album-mssage .pho-radio-active {
+  background: url(../../sh/images/bj.png) no-repeat 0 -329px;
 }
 
 /*# sourceMappingURL=album.css.map */

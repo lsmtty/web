@@ -1,0 +1,28 @@
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.clearFix {
+  zoom: 1; }
+
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+input {
+  font-family: Microsoft YaHei;
+  color: #383838;
+  outline: none; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+/*# sourceMappingURL=reset.css.map */

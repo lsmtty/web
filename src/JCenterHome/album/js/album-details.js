@@ -1,20 +1,24 @@
 require.config({
     baseUrl:'../',
     paths: {
-        "configurl": "base/configurl"
+        "configurl": "sh/js/configurl"
     }
 });
 require(['configurl'],function(configpaths) {
 
     require.config(configpaths);
-    require(['jquery','tools','dialog'],function($,tools,dialog) {
+    require(['jquery','tools','dialog','layout'],function($,tools,dialog,layout){
+        //header footer 布局
+        layout.header();
+        layout.footer();
+
         $('body').on('click', '.set-name', function () {
             if ($(this).next().is(':hidden')) {
                 $(this).next().show();
             } else {
                 $(this).next().hide();
             }
-        })
+        });
         $('body').on('click', '.set-name', function () {
             return false;
         });
@@ -55,4 +59,4 @@ require(['configurl'],function(configpaths) {
             }
         });
     });
-})
+});

@@ -1,10 +1,24 @@
-#essay {
-  border: 1px solid #d7e1ef;
+@charset "UTF-8";
+#essay, #write, #essay-group, #essay-detials, #essay .essay-right .essay-manage {
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
-  padding: 0 19px;
   background: #fff;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+#essay, #write, #essay-group, #essay-detials {
+  padding: 0 19px;
+}
+
+#essay .essay-right .essay-manage {
+  padding: 0 15px;
+}
+
+#essay .essay-right .group-title, .essay-li .alog-list-link {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #essay {
@@ -18,23 +32,336 @@
 }
 #essay .essay-list-set {
   background: #e7ebf4;
-  /* display: none; */
+  display: none;
 }
 #essay .top-set {
   float: left;
   line-height: 40px;
   margin: 0 20px 0 5px;
-  color: #3498d8;
+  color: #1da1f2;
   cursor: pointer;
 }
-#essay #all_onoff {
+#essay #all_onoff, #essay .alog-onoff {
   float: left;
   width: 14px;
   height: 14px;
   margin: 14px 4px 0 6px;
 }
+#essay .alog-onoff {
+  display: none;
+}
 #essay #all-set-no {
   float: right;
+}
+#essay .essay-box {
+  float: left;
+  padding-bottom: 74px;
+  position: relative;
+  width: 703px;
+}
+#essay .essay-right {
+  float: right;
+  width: 240px;
+}
+#essay .essay-right .essay-manage {
+  margin-top: 16px;
+  background: #f3f8fe;
+  border-radius: 2px;
+}
+#essay .essay-right .box-more {
+  float: right;
+  padding-right: 3px;
+  margin-top: 18px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #828282;
+}
+#essay .essay-right .group-title {
+  line-height: 32px;
+  position: relative;
+  padding-left: 2px;
+  cursor: pointer;
+  vertical-align: top;
+  padding-right: 30px;
+}
+#essay .essay-right .group-title-active {
+  background: #f3f1f2;
+}
+#essay .essay-right .group-num {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  line-height: 32px;
+  color: #828282;
+}
+#essay .search-essay {
+  margin-top: 7px;
+}
+#essay .search-essay .search-title {
+  line-height: 34px;
+  font-weight: normal;
+}
+#essay .search-essay .search {
+  position: relative;
+  height: 51px;
+  border-bottom: 1px solid #e1e1e1;
+}
+#essay .search-essay #search-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 5px 40px 5px 5px;
+  line-height: 24px;
+  background: none;
+  color: #6f6f6f;
+}
+#essay .search-essay #search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px;
+  background: url(../../sh/images/bj.png) no-repeat -110px -73px;
+}
+
+/**/
+.essay-li {
+  line-height: 40px;
+  position: relative;
+}
+.essay-li a {
+  color: #383838;
+}
+.essay-li .alog-list-link {
+  max-width: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+.essay-li .alog-time {
+  float: right;
+  padding-right: 75px;
+  line-height: 40px;
+  color: #828282;
+}
+.essay-li .alog-set {
+  position: absolute;
+  height: 40px;
+  width: 45px;
+  top: 0;
+  right: 8px;
+}
+.essay-li .set-name {
+  color: #1da1f2;
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  position: relative;
+  z-index: 10;
+  line-height: 14px;
+}
+.essay-li .alog-set-sj {
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  width: 8px;
+  height: 12px;
+  background: url(../../sh/images/bj.png) no-repeat -281px -38px;
+}
+.essay-li .set-sj-ok {
+  z-index: 3;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  background: #fff url(../../sh/images/bj.png) no-repeat -300px -39px;
+}
+.essay-li .set-box {
+  z-index: 12;
+  position: absolute;
+  top: 27px;
+  right: 8px;
+  width: 64px;
+  line-height: 24px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  display: none;
+  height: auto;
+}
+.essay-li .set-box p:hover {
+  background: #1da1f2;
+}
+.essay-li .set-box p:hover a {
+  color: #fff;
+}
+
+.essay-li-color {
+  background: #eef5fb;
+}
+
+/**/
+/*写随笔*/
+#write {
+  background: #fff;
+}
+#write .write-list {
+  margin-top: 17px;
+}
+#write .write-title {
+  float: left;
+  width: 66px;
+  padding-left: 27px;
+  line-height: 40px;
+  background: url(../../sh/images/bj.png) no-repeat -397px -66px;
+}
+#write #group-name, #write .title-box {
+  float: left;
+  width: 228px;
+  height: 38px;
+  padding-right: 30px;
+  border: 1px solid #e1e1e1;
+  position: relative;
+}
+#write .title-box {
+  width: 536px;
+  padding: 0;
+}
+#write .write-input {
+  position: absolute;
+  top: 0;
+  height: 0;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  line-height: 38px;
+  height: 38px;
+  background: none;
+  z-index: 2;
+  cursor: pointer;
+}
+#write #essay-title {
+  padding: 0 10px;
+  cursor: text;
+}
+#write #group-class {
+  display: none;
+  position: absolute;
+  top: 39px;
+  left: -1px;
+  width: 100%;
+  line-height: 24px;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  background: #fff;
+  text-indent: 10px;
+  z-index: 3;
+}
+#write .select-class {
+  padding: 5px 0;
+  cursor: pointer;
+}
+#write .select-class:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+#write .sanjiao {
+  top: 18px;
+  right: 8px;
+}
+#write .write-allnum {
+  float: left;
+  line-height: 40px;
+  padding-left: 10px;
+  color: #828282;
+}
+#write #new-num {
+  color: #383838;
+}
+#write #write-box {
+  float: left;
+  width: 844px;
+  padding-bottom: 76px;
+  position: relative;
+}
+#write .btns {
+  z-index: 9999;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+}
+
+/*随笔分类*/
+#essay-group {
+  background: #fff;
+}
+#essay-group .group-li {
+  padding-left: 5px;
+}
+#essay-group .group-all {
+  float: left;
+  width: 700px;
+  min-height: 230px;
+  padding-bottom: 74px;
+}
+#essay-group .set-logs-hint {
+  font-size: 16px;
+  float: right;
+  width: 238px;
+  height: 98px;
+  border: 1px solid #e1e1e1;
+  margin-top: 16px;
+  background: #f3f8fe;
+  padding-bottom: 20px;
+}
+#essay-group .set-logs-hint span {
+  display: block;
+  padding-left: 26px;
+  width: 68px;
+  margin: 20px auto 10px;
+  background: url(../../sh/images/bj.png) no-repeat -401px -43px;
+}
+#essay-group .set-logs-hint p {
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  color: #1da1f2;
+}
+
+/*随笔详情*/
+#essay-detials {
+  background: #fff;
+}
+#essay-detials .title {
+  line-height: 44px;
+  padding-top: 10px;
+  font-size: 24px;
+}
+#essay-detials .message {
+  margin-bottom: 10px;
+  margin-left: -19px;
+}
+#essay-detials li {
+  float: left;
+  line-height: 14px;
+  padding: 0 15px 0 19px;
+  margin: 8px 0;
+  border-right: 1px solid #e1e1e1;
+}
+#essay-detials li span {
+  color: #828282;
+}
+#essay-detials .last {
+  border: none;
+}
+#essay-detials #content {
+  padding: 10px 0;
+  word-wrap: break-word;
 }
 
 /*# sourceMappingURL=essay.css.map */

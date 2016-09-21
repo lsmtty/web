@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我的成果--上传</title>
+		<script src="../../teacherStudio/js/require.js" data-main="./js/resultupload"></script>
+		<link rel="stylesheet" type="text/css" href="./css/result_upload.css" />
+	</head>
+
+	<body>
+		<div class="header"></div>
+		<div class="main">
+			<div class="container clearFix">
+				<div class="breadline">
+					<span>课题研究 ></span>
+					<span>上传</span>
+				</div>
+				<div class="upload-area">
+					<div class="upload-top-area">
+						<span class="upload-name">上传课题研究</span>
+					</div>
+					<div class="upload-article">
+						<form class="upload-form">
+							<div class="upload-item input-hide">
+								<span class="upload-name">类型</span>
+								<div class="choose-box">
+									<span class="choose-value">国家级课题</span>
+									<ul style="display: none;">
+										<li class="darkbg"><span>国家级课题</span></li>
+										<li><span>国家级课题</span></li>
+										<li><span>年级课题</span></li>
+										<li><span>学校课题</span></li>
+										<li><span>其他</span></li>
+									</ul>
+								</div>
+								<input id="type-input" type="text" name="type" value="国际级课题" />
+							</div>
+							<div class="upload-item input-hide">
+								<span class="upload-name">学段</span>
+								<div class="choose-box">
+									<span class="choose-value">幼儿</span>
+									<ul style="display: none;">
+										<li class="darkbg"><span>幼儿</span></li>
+										<li><span>小学</span></li>
+										<li><span>初中</span></li>
+										<li><span>高中</span></li>
+									</ul>
+								</div>
+								<input id="phase-input" type="text" name="phase" value="幼儿" />
+							</div>
+							<div class="upload-item input-hide">
+								<span class="upload-name">学科</span>
+								<div class="choose-box">
+									<span class="choose-value">语文</span>
+									<ul style="display: none;">
+										<li class="darkbg"><span>语文</span></li>
+										<li><span>数学</span></li>
+										<li><span>英语</span></li>
+										<li><span>音乐</span></li>
+										<li><span>美术</span></li>
+									</ul>
+								</div>
+								<input id="subject-input" type="text" name="subject" value="语文" />
+							</div>
+							<div class="upload-item input-hide">
+								<span class="upload-name">年级</span>
+								<div class="choose-box">
+									<span class="choose-value">托班</span>
+									<ul style="display: none;">
+										<li class="darkbg"><span>托班</span></li>
+										<li><span>小班</span></li>
+										<li><span>中班</span></li>
+										<li><span>大班</span></li>
+									</ul>
+								</div>
+								<input id="grade-input" type="text" name="grade" value="托班" />
+							</div>
+							<div class="upload-item">
+								<span class="upload-name">标题</span>
+								<input id="title-input" maxlength="20" type="text" name="title" value="请输入标题" />
+								<div class="number-length">
+									<span id="nuw-num">0</span>/20
+								</div>
+							</div>
+							<div class="upload-item">
+								<span class="upload-name">内容</span>
+								<input id="title-input" maxlength="20" type="button" value="选择文件"/>
+								<span id="delete-file">我的电脑/化学文件夹/英语.doc<div></div></span>
+							</div>
+							<span class="share-advise">您上传的课题研究仅自己可见，分享出去别人才可查看哦！</span>
+							<div class="commit-area">
+								<input type="button" value="保存" class="admit-button">
+								<input type="button" value="取消" class="cancel-button">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</body>
+
+</html>

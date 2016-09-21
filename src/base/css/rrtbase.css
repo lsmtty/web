@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/*模块顶部搜索选项*/
+#search-box {
+    display: inline-block;
+    line-height: 34px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+}
+#search-box .search-type {
+    float: left;
+    width: 100px;
+    cursor: pointer;
+    text-indent: 10px;
+    border-right: 1px solid #e1e1e1;
+}
+#search-box .search-type .sanjiao {
+    top: 16px;
+    right: 7px;
+}
+#search-box .search-type #type {
+    display: block;
+    position: relative;
+    padding-right: 20px;
+}
+#search-box .types {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    margin-top: -1px;
+    cursor: pointer;
+    top: 34px;
+    left: 0;
+    display: none;
+}
+#search-box li:hover {
+    color: #fff;
+    background: #1da1f2;
+}
+#search-box #search {
+    float: right;
+    font-size: 12px;
+    width: 180px;
+    height: 34px;
+    line-height: 34px;
+    color: #828282;
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    padding: 0 10px;
+    border: none;
+    display: block;
+}
+
+/****图标样式****/
+
+/****文件图标标准****/
+
+.icon-pic {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat right -54px;
+}
+
+.icon-zip {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat 0 -108px;
+}
+
+.icon-excel {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat right -108px;
+}
+
+.icon-word {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat 0 0;
+}
+
+.icon-ppt {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat right -162px;
+}
+
+.icon-video {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat 0 -54px;
+}
+
+.icon-pdf {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat 0 -162px;
+}
+
+.icon-other {
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	background: url(../images/rrt_file_type.png) no-repeat right 0px;
+}
+
+/****文件图标小****/
+
+.icon-pic-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat right -72px;
+}
+
+.icon-zip-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat 0 -108px;
+}
+
+.icon-excel-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat right -108px;
+}
+
+.icon-word-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat 0 -36px;
+}
+
+.icon-ppt-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat right 0;
+}
+
+.icon-video-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat 0 -72px;
+}
+
+.icon-pdf-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat 0 0;
+}
+
+.icon-other-small {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	background: url(../images/rrt_file_type_small.png) no-repeat right -36px;
+}

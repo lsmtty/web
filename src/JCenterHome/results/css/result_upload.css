@@ -1,0 +1,177 @@
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.clearFix {
+  zoom: 1; }
+
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+input {
+  font-family: Microsoft YaHei;
+  color: #383838;
+  outline: none; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+.main {
+  background: #f5f6fa;
+  width: 1920px; }
+
+.container {
+  width: 998px;
+  position: relative;
+  margin: 0 auto; }
+
+.admit-button, .cancel-button, .upload-area .upload-article .upload-item input[type=button] {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px; }
+
+.upload-area #delete-file {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.admit-button {
+  background: #1da1f3;
+  color: #ffffff;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  border: 1px solid #1da1f3; }
+
+.cancel-button {
+  background: #acbbd0;
+  color: #ffffff; }
+
+.breadline {
+  height: 36px; }
+  .breadline span {
+    color: #828282;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 12px;
+    vertical-align: top;
+    margin-top: 12px;
+    cursor: pointer; }
+
+.upload-area {
+  border: 1px solid #e1e1e1;
+  border-right: 2px solid #e1e1e1;
+  margin-bottom: 40px; }
+  .upload-area .upload-top-area {
+    height: 35px;
+    width: inherit;
+    background: url(../images/shadow.png) repeat-x 0 center;
+    padding: 17px 0 0 18px;
+    border-bottom: 1px solid #e1e1e1; }
+    .upload-area .upload-top-area span {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold; }
+  .upload-area .upload-article {
+    padding: 32px 74px 40px 66px;
+    background: #ffffff; }
+    .upload-area .upload-article .upload-item {
+      height: 36px;
+      background: url("../images/star.png") no-repeat 0 center;
+      display: inline-block;
+      width: 858px;
+      font-size: 0;
+      margin-bottom: 20px; }
+      .upload-area .upload-article .upload-item .upload-name {
+        display: inline-block;
+        font-size: 14px;
+        color: #828282;
+        margin-top: 11px;
+        margin-left: 14px; }
+      .upload-area .upload-article .upload-item .choose-box {
+        position: relative;
+        border: 1px solid #e1e1e1;
+        display: inline-block;
+        width: 248px;
+        height: inherit;
+        margin-left: 14px;
+        vertical-align: top;
+        color: #383838;
+        font-size: 14px;
+        background: url("../images/trangle_down.png") no-repeat 231px 11px; }
+        .upload-area .upload-article .upload-item .choose-box .choose-value {
+          margin-top: 11px;
+          display: inline-block;
+          margin-left: 12px; }
+      .upload-area .upload-article .upload-item .upload-title {
+        color: #828282;
+        background: none;
+        width: 550px; }
+      .upload-area .upload-article .upload-item input[name=title] {
+        margin-left: 14px;
+        width: 733px;
+        height: 32px;
+        padding-left: 12px;
+        border: 1px solid #e1e1e1; }
+      .upload-area .upload-article .upload-item input[type=button] {
+        margin-left: 14px;
+        color: #ffffff;
+        width: 113px;
+        height: 38px;
+        font-size: 16px;
+        background: #ff9453; }
+        .upload-area .upload-article .upload-item input[type=button]:hover {
+          background: #ff6c12; }
+      .upload-area .upload-article .upload-item .number-length {
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 14px; }
+    .upload-area .upload-article .input-hide input {
+      display: none; }
+    .upload-area .upload-article .share-advise {
+      color: #7785a0;
+      font-size: 12px;
+      display: block;
+      margin: -4px 0px 30px 40px; }
+    .upload-area .upload-article .commit-area {
+      width: 268px;
+      margin: 0 auto; }
+      .upload-area .upload-article .commit-area input {
+        width: 113px;
+        height: 38px; }
+      .upload-area .upload-article .commit-area .cancel-button {
+        margin-left: 33px; }
+  .upload-area #delete-file {
+    margin-left: 16px;
+    margin-top: 2px;
+    display: none;
+    color: #828282;
+    font-size: 14px;
+    width: 484px; }
+    .upload-area #delete-file div {
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+      vertical-align: text-bottom;
+      cursor: pointer;
+      display: inline-block;
+      background: url(../images/close_white.png) no-repeat; }
+      .upload-area #delete-file div:hover {
+        background: url(../images/close_blue.png) no-repeat; }
+
+/*# sourceMappingURL=result_upload.css.map */

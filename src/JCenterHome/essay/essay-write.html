@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>写随笔</title>
+    <link rel="stylesheet" href="../../base/css/base.css">
+    <link rel="stylesheet" href="../sh/css/common.css">
+    <link rel="stylesheet" href="./css/essay.css">
+    <link rel="stylesheet" href="../../base/tpl/JCenterHome_hd/css/hd_ft.css">
+    <!--<script src="../../lib/jquery/jquery-1.9.1.js"></script>-->
+    <script src="../../base/component/RichText/ueditor.config.js"></script>
+    <script src="../../base/component/RichText/ueditor.all.min.js"></script>
+    <script src="../../base/component/RichText/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+
+<div id="header"></div>
+<div id="html-content">
+    <div id="write" class="wrap">
+        <h2 class="box-header">
+            <a href="./essay.html">随笔</a>><span class="middle-text" href="javascript:;">写随笔</span>
+        </h2>
+        <div class="write-list clearFix">
+            <span class="write-title">日志分类</span>
+            <div id="group-name">
+                <div type="101" class="write-input" onof="1">
+                    个人日志
+                </div>
+                <span class="sanjiao"></span>
+                <ul id="group-class" class="select-box">
+                    <li type="101" class="select-class">个人日志</li>
+                    <li type="117" class="select-class">最复杂的</li>
+                    <li type="141" class="select-class">速度发送</li>
+                    <li type="147" class="select-class">的若干</li>
+                </ul>
+            </div>
+        </div>
+        <div class="write-list clearFix">
+            <span class="write-title">日志标题</span>
+            <div class="title-box">
+                <input id="essay-title" class="write-input" maxlength="50" type="text" onof="1">
+            </div>
+            <span class="write-allnum"><span id="new-num">0</span>/50</span>
+        </div>
+        <div class="write-list clearFix">
+            <span class="write-title">日志内容</span>
+            <div id="write-box">
+                <!-- 插入编辑器 -->
+                <script id="editor" name="content" type="text/plain"></script>
+                <div class="btns">
+                    <span id="confirm">发布</span>
+                    <!--<span class="write-btns">保存</span>-->
+                    <span id="cancel">取消</span>
+                </div>
+                <!--end-->
+            </div>
+
+            <button id="btn1">获得带格式的纯文本</button>
+            <button id="btn2">设置编辑器的内容</button>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script src="../../lib/requires/requires.js" data-main="js/essay-write"></script>
+<script>
+
+</script>
+</body>
+</html>

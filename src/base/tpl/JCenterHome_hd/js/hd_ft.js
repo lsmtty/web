@@ -76,6 +76,31 @@
         headerStr = topNav + spaceNav;
         header.innerHTML = headerStr;
     }
+    layout.footer = function(){
+        var footer = document.getElementById('footer');
+        var footerStr = '<div id="mainbo_footer">'
+                + '<div>'
+                    + '<ul class="clearFix wrap">'
+                        + '<li>'
+                            + '<p>版权所有:明博教育股份有限公司</p>'
+                            + '<p>ICP备案号: 蜀ICP备 14000302</p>'
+                            + '<p>版本号:2.2SP9 </p>'
+                        + '</li>'
+                        + '<li>'
+                            + '<p>客服热线:028-85768857 </p>'
+                            + '<p>每天9：00-17：30(法定节假日除外) </p>'
+                        + '</li>'
+                        + '<li><img src="http://ck.yun.myuclass.com/portal/images/code.png">'
+                            + '<p>扫一扫,关注我们获得更多教育咨询 </p>'
+                        + '</li>'
+                        + '<li class="main_last_msg">'
+                            + '<p>网站技术支持:明博教育 </p>'
+                        + '</li>'
+                    + '</ul>'
+                + '</div>'
+            + '</div>';
+        footer.innerHTML = footerStr;
+    }
 })();
 try{
     define('layout',function(){
